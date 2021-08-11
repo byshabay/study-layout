@@ -99,15 +99,13 @@
 
 .header__nav-block {
     position: fixed;
-    margin-top: 90px;
+    margin-top: 80px;
     width: 100%;
 }
 .header__nav-block .container{
     width: 100%;
     position: relative;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
+    padding-top: 10px;
 }
 .header__logo {
     position: absolute;
@@ -148,6 +146,7 @@
 .header__search {
     position: absolute;
     right: 0;
+    top: 0;
 }
 .header__search input{
     height: 30px;
