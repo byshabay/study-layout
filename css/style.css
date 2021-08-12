@@ -152,10 +152,10 @@
 .header__sub-parent:hover::after{
     content: url('../images/angle-down-blue.png');
 }
-.header__sub-parent:hover + .header__sub-content{
-    opacity: 1;
-    transition: 0.3s;
+.header__parent-li:hover .header__sub-content{ 
+    display: block;
 }
+
 .header__search {
     width: 10%;
     position: absolute;
@@ -168,6 +168,14 @@
     height: 30px;
     padding: 0 5px;
     border: 1px solid #e7e7e7;
+    background-color: var(--dirty-white);
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { 
+    display: none; 
 }
 .header__search ::placeholder{
     font-size: var(--text_13);
@@ -184,7 +192,6 @@
     background-size: cover;
 }
 .header__sub-content{
-    opacity: 0;
     transition: 0.3s;
     background-color: var(--dirty-white);
     padding: 30px;
@@ -195,6 +202,7 @@
     margin-top: 0px;
     box-shadow: 5px 10px 20px -6px rgba(34, 60, 80, 0.2);
     z-index: 1;
+    display: none;
 }
 .header__nav-submenu{
     display: flex;    
@@ -287,6 +295,7 @@
 .main{
     position: relative;
     width: 100%;
+    padding-top: 50px;
 }
 .banner{
     position: relative;
@@ -335,6 +344,9 @@
     }
     .header__search {
         width: 15%;
+    }
+    .header__search input{
+        background-color: #fff;
     }
     .header__nav-list a{
         margin-right: 20px;
