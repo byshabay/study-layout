@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVENUE FASHION</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -47,7 +52,7 @@
                 <img class="header__logo" src="images/logo.png" alt="Логотип">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li><a class="header__sub-parent" href="#">mens</a>
+                        <li class="header__parent-li"><a class="header__sub-parent" href="#">mens</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
                                     <ul class="header__nav-submenu-1">
@@ -180,10 +185,55 @@
     <main class="main">
         <!-- 2.1.BANNER START -->
         <section class="banner">
-            <img class="banner__h1" src="images/ave.png" alt="">
+            <img class="banner__h1" src="images/ave.png" alt="AVE">
+            <a class="banner__btn" href="#">shop men’s collection</a>
 
         </section>
         <!-- 2.1.BANNER END -->
+
+        <!-- 2.2.CATALOG START -->
+        <section class="catalog container">
+            <hr>
+            <div class="catalog__tab">
+                <input type="radio" name="catalog__group-1" id="tab1">
+                <label for="tab1" class="catalog__group-1-title">Popular</label>
+                <section class="catalog__group-1-content">
+                    Содержимое 1
+                </section>
+
+                <input type="radio" name="catalog__group-2" id="tab2">
+                <label for="tab2" class="catalog__group-2-title">new arrivals</label>
+                <section class="catalog__group-2-content">
+                    Содержимое 2
+
+                </section>
+
+                <input type="radio" name="catalog__group-3" id="tab3">
+                <label for="tab3" class="catalog__group-3-title">best sellers</label>
+                <section class="catalog__group-3-content">
+                    Содержимое 3
+
+                </section>
+
+                <input type="radio" name="catalog__group-4" id="tab4">
+                <label for="tab4" class="catalog__group-4-title">special offers</label>
+                <section class="catalog__group-4-content">
+                    Содержимое 4
+
+                </section>
+
+                <input type="radio" name="catalog__group-5" id="tab5">
+                <label for="tab5" class="catalog__group-5-title">coming soon</label>
+                <section class="catalog__group-5-content">
+                    Содержимое 5
+
+                </section>
+            </div>
+
+            <hr>
+        </section>
+        <!-- 2.2.CATALOG END -->
+
     </main>
     <!-- 2.MAIN END -->
 
