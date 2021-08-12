@@ -11,7 +11,7 @@
     --max-width: 1780px;
     --text_13: calc( (100vw - 300px)/(1780 - 300) * (13 - 11) + 11px);
     --text_21: calc( (100vw - 300px)/(1780 - 300) * (21 - 18) + 18px);
-    --text_450px: calc( (100vw - 300px)/(1780 - 300) * (450 - 400) + 400px);
+    --text_36: calc( (100vw - 300px)/(1780 - 300) * (36 - 33) + 33px);
 }
 
 *{
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1168px;
-    padding-right: 30px;
+    padding-right: 10px;
     margin: 0 auto;
 }
 .header__nav-list {
@@ -131,11 +131,11 @@
 .header__nav-list a{
     color: var(--grey);
     font-family: var(--montserrat-bold);
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: var(--text_13);
     vertical-align: top;
 }
-.header__nav-list li:hover a{
+.header__nav-list li a:hover{
     color: var(--light-blue);
 }
 .header__sub-parent{
@@ -148,6 +148,10 @@
 }
 .header__sub-parent:hover::after{
     content: url('../images/angle-down-blue.png');
+}
+.header__sub-parent:hover + .header__sub-content{
+    opacity: 1;
+    transition: 0.3s;
 }
 .header__search {
     width: 10%;
@@ -176,14 +180,51 @@
     background: url("../images/search.png") center no-repeat;
     background-size: cover;
 }
-.header__nav-submenu {
-    display: none; /*выключить для работы со стилями*/
+.header__sub-content{
+    opacity: 0;
+    transition: 0.3s;
+    background-color: var(--dirty-white);
+    padding: 30px;
+    font-size: var(--text_13);
+    font-weight: bold;
+    color: var(--grey);
+    position: absolute;
+    margin-top: 20px;
+    box-shadow: 5px 10px 20px -6px rgba(34, 60, 80, 0.2);
+}
+.header__nav-submenu{
+    display: flex;    
+}
+.header__nav-submenu div{
+    margin-bottom: 30px;
+}
+.header__nav-submenu a{
+    font-family: var(--montserrat-light);
+    line-height: 30px;
+    font-size: var(--text_13);
+    color: var(--light-grey);
 }
 .header__nav-submenu-1 {
+    text-transform: none;
+
 }
 .header__nav-submenu-2 {
+    margin: 0 0 0 20px;
+    text-transform: none;
 }
 .header__submenu-sale {
+    background-color: var(--dark-grey);
+    color: #fff;
+    padding: 62px;
+    font-size: var(--text_36);
+    letter-spacing: 3px;
+    margin: 60px 0 0;
+}
+.header__submenu-sale div{
+    font-family: var(--montserrat-bold);
+}
+.header__submenu-sale span{
+    font-family: var(--montserrat);
 }
 .header__burger{
     display: none;
