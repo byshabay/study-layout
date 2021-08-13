@@ -246,7 +246,6 @@ input::-webkit-search-results-decoration {
     position: relative;
     width: 30px;
     height: 20px;
-    margin: 0 auto;
     z-index: 5;
 }
 .header__burger::before, .header__burger::after, .header__burger span{
@@ -281,9 +280,15 @@ input::-webkit-search-results-decoration {
 .header__nav.active{
     display: flex;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 190px;
     width: 100%;
     padding: 200px 0 0 2%;
+}
+.header__search.active{
+    display: block; 
+    position: absolute;
+    left: 10px;
+    top: 70px;
 }
 .header__nav.active .header__nav-list{
     flex-direction: column;
@@ -312,6 +317,9 @@ input::-webkit-search-results-decoration {
 .header__nav-block.scroll{
     background-color: var(--dirty-white);
 }
+.header__auth .header__sub-content{
+    top: 50px;
+}
 
 
 /* 1.2.HEADER NAVIGATION MENU END */
@@ -326,6 +334,9 @@ input::-webkit-search-results-decoration {
     width: 100%;
     padding-top: 50px;
 }
+.banner .container{
+    text-align: right;
+}
 .banner{
     position: relative;
     width: 100%;
@@ -336,12 +347,13 @@ input::-webkit-search-results-decoration {
     z-index: 0;
 }
 .banner__h1{
+    display: block;
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
+    max-width: var(--max-width);
 }
 .banner__btn{
-    display: block;
-    position: absolute;
+    display: inline-block;
     text-transform: uppercase;
     color: var(--grey);
     font-weight: bold;
@@ -349,9 +361,11 @@ input::-webkit-search-results-decoration {
     padding: 22px 32px ;
     font-size: var(--text_21);
     letter-spacing: 6px;
-    bottom: 122px;
-    right: 15%;
-    transition: 0.7s;
+    transition: 0.5s;
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 12%;
+    text-align: center;
 }
 .banner__btn:hover{
     color: #fff;
@@ -428,8 +442,7 @@ a.active-tab{
     margin-right: 5px ;
 }
 .product__price sup{
-    font-size: var(--text_13);
-    margin-right: -5px;
+    font-size: 10px;
     text-decoration: none;
 }
 .product:hover .product__descr{
@@ -641,7 +654,7 @@ a.active-tab{
     color: #fff;
     font-size: var(--text_36);
     text-transform: uppercase;
-    padding-top: 50px;
+    padding: 50px;
 }
 .footer__bold-text{
     font-family: var(--montserrat-bold);
@@ -682,17 +695,32 @@ a.active-tab{
 
 /* MEDIA START */
 
+/* MEDIA 2000px START */
+@media(min-width: 2000px){
+    .lookbook{
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+    .lookbook h2, .lookbook span{
+        font-size: 48px;
+    }
+    .lookbook__item p{
+        font-size: 21px;
+        height: 250px;
+    }
+}
+/* MEDIA 2000px END */
+
 /* MEDIA 1660px START */
 @media(max-width: 1660px){
     .header__nav-block{
-        background: #fff;
-        opacity: 0.7;
+        background: var(--dirty-white);
     }
     .header__search {
         width: 15%;
     }
     .header__search input{
-        background-color: #fff;
+        background-color: var(--dirty-white);
     }
     .header__nav-list a{
         margin-right: 20px;
@@ -705,6 +733,9 @@ a.active-tab{
     }
     .lookbook__item p{
         padding-left: 40%;
+    }
+    .banner__btn{
+        width: 40%;
     }
 }
 /* MEDIA 1660px END */
@@ -722,6 +753,10 @@ a.active-tab{
     .lookbook__item p{
         padding-left: 40%;
         height: 150px;
+    }
+    .banner__btn{
+        width: 50%;
+        margin-right: 0;
     }
 
 }
@@ -756,16 +791,22 @@ a.active-tab{
         position: relative;
         top: 0;
     }
+    .header__logo{
+        margin-left: 5%;
+    }
     .header__nav-block .container{
         display: flex;
         align-items: center;
         height: 50px;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
     .header__burger{
         display: block;
-        position: absolute;
+        margin-right: 5%;
+    }
+    .header__search{
+        display: none;
     }
     .banner{
         height: 500px;
@@ -774,7 +815,7 @@ a.active-tab{
     .banner__h1{
         width: 50%;
         margin: 0 25%;
-    }
+    } 
     .banner__btn{
         width: 50%;
         text-align: center;

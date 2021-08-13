@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // HEADER BURGER START
     $(".header__burger").click(function (e) {
-        $(".header__burger, .header__nav, .header__nav-block").toggleClass('active');
+        $(".header__burger, .header__nav, .header__nav-block, .header__search").toggleClass('active');
     });
     // HEADER BURGER END
 
@@ -20,6 +20,7 @@ $(document).ready(function () {
         $(this.hash).show();
         $(".catalog__tab a").removeClass("active-tab")
         $(this).addClass("active-tab");
+        return false;
     });
     // CATALOG TABS END
 

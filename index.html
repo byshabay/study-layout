@@ -35,10 +35,37 @@
                 <ul class="header__auth">
                     <li class="header__register"><a href="#">Register</a></li>
                     <li class="header__sign-in"><a href="#">Sign In</a></li>
-                    <li class="header__cart">
+                    <li class="header__cart header__parent-li">
                         <img src="images/cart.png" alt="Корзина">
                         <span> empty</span>
                         <img class="header__cart-btn" src="images/cart-button.png">
+                        <div class="header__sub-content">
+                            <div class="header__nav-submenu">
+                                <ul class="header__nav-submenu-1">
+                                    <div>Casuals</div>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Sportswear</a></li>
+                                    <li><a href="#">Trousers & Chinos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+
+                                <ul class="header__nav-submenu-2">
+                                    <div>Formal</div>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Trousers</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="header__submenu-sale">
+                                <div> Autumn sale! </div>
+                                <span> up to 50% off</span>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -168,13 +195,14 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__burger">
-                    <span></span>
-                </div>
                 <form class="header__search">
                     <input type="search" name="search" id="search" placeholder="Search...">
                     <button class="header__search-btn" type="submit"></button>
                 </form>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
             </div>
         </section>
         <!-- 1.2.HEADER NAVIGATION MENU END -->
@@ -185,8 +213,10 @@
     <main class="main">
         <!-- 2.1.BANNER START -->
         <section class="banner">
-            <img class="banner__h1" src="images/ave.png" alt="AVE">
-            <a class="banner__btn" href="#">shop men’s collection</a>
+            <div class="container">
+                <img class="banner__h1" src="images/ave.png" alt="AVE">
+                <a class="banner__btn" href="#">shop men’s collection</a>
+            </div>
 
         </section>
         <!-- 2.1.BANNER END -->
@@ -220,7 +250,7 @@
                                 <div class="catalog__two-items">
                                     <div class="product">
                                         <div class="product__price">
-                                            <sup>p</sup>
+                                            <sup>&pound;</sup>
                                             20
                                         </div>
                                         <div class="product__info">
@@ -254,7 +284,7 @@
                                     </div>
                                     <div class="product">
                                         <div class="product__price">
-                                            <sup>p</sup>
+                                            <sup>&pound;</sup>
                                             20
                                         </div>
                                         <img src="images/cat_2.png" alt="">
@@ -286,7 +316,7 @@
                                 </div>
                                 <div class="product">
                                     <div class="product__price">
-                                        <sup>p</sup>
+                                        <sup>&pound;</sup>
                                         20
                                     </div>
                                     <img src="images/cat_3.png" alt="">
@@ -319,12 +349,12 @@
                             <div class="catalog__prod-group catalog__prod-group-2">
                                 <div class="product">
                                     <div class="product__price sale">
+                                        <sup>&pound;</sup>
                                         <div class="catalog__old-price">
-                                            <sup>p</sup>
                                             20
                                         </div>
                                         <div class="product__sale">
-                                            <sup>p</sup>
+                                            <sup>&pound;</sup>
                                             20
                                         </div>
                                     </div>
@@ -358,7 +388,7 @@
                                 <div class="catalog__two-items">
                                     <div class="product">
                                         <div class="product__price">
-                                            <sup>p</sup>
+                                            <sup><sup>&pound;</sup></sup>
                                             20
                                         </div>
                                         <img src="images/cat_2.png" alt="">
@@ -389,7 +419,7 @@
                                     </div>
                                     <div class="product">
                                         <div class="product__price">
-                                            <sup>p</sup>
+                                            <sup><sup>&pound;</sup></sup>
                                             20
                                         </div>
                                         <img src="images/cat_6.png" alt="">
