@@ -324,6 +324,133 @@ input::-webkit-search-results-decoration {
 
 /* 1.2.HEADER NAVIGATION MENU END */
 
+/* 1.3.HEADER MEDIA START */
+
+/* 1660px */
+@media(max-width: 1660px){
+    .header__nav-block{
+        background: var(--dirty-white);
+    }
+    .header__search {
+        width: 15%;
+    }
+    .header__search input{
+        background-color: var(--dirty-white);
+    }
+    .header__nav-list a{
+        margin-right: 20px;
+    }
+    .banner__btn{
+        width: 40%;
+    }
+}
+
+/* 820px */
+@media(max-width: 820px){
+    .header__nav{
+        display: none;
+    }
+    .header__nav-block{
+        padding-top: 50px;
+        opacity: 1;
+    }
+    .header__cart span{
+         display: none;
+    }
+    .header__cart-btn{
+        display: none;
+    }
+    .header__auth .header__cart{
+        width: auto;
+    }
+    .header__top-menu .container{
+        width: 90%;
+    }
+    .header__auth li{
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .header__logo, .header__search{
+        position: relative;
+        top: 0;
+    }
+    .header__logo{
+        margin-left: 5%;
+    }
+    .header__nav-block .container{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header__burger{
+        display: block;
+        margin-right: 5%;
+    }
+    .header__search{
+        display: none;
+    }
+    .header__search {
+        width: 30%;
+    }
+    .header__logo{
+        width: 30%;
+    }
+    .header__currency-list{
+        font-size: var(--text_13);
+    }
+    .header__sign-in{
+        text-align: center;
+    }
+    .header__nav-list a{
+        font-size: var(--text_21);
+        line-height: 20px;
+    }
+    .header__sub-parent::after{
+        display: none;
+    }
+    .header__nav li{
+        margin-bottom: 20px;
+    }
+    .header__nav-block.active .header__parent-li:first-child{
+        margin-top: 0px;
+    }
+    .footer__menu{
+        flex-wrap: wrap;
+    }
+    .footer__menu :last-child{
+        width: 100%;
+    }
+    .footer__column{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer__banner-1{
+        font-size: var(--text_21);
+    }
+    .footer__mini .container{
+        flex-direction: column;
+    }
+    .footer__autors{
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .footer__autors address{
+        margin-left: 0;
+    }
+    .footer__copyright{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* 1.3.HEADER MEDIA END */
+
 /* 1.HEADER END */
 
 /* 2.MAIN START */
@@ -602,8 +729,133 @@ a.active-tab{
     color: #fff;
     border: 2px solid var(--light-blue);
 }
-
 /* 2.3.LOOKBOOK END */
+
+/* 2.4. MAIN MEDIA START */
+
+/* 2000px */
+
+@media(min-width: 2000px){
+    .lookbook{
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+    .lookbook h2, .lookbook span{
+        font-size: 48px;
+    }
+    .lookbook__item p{
+        font-size: 21px;
+        height: 250px;
+    }
+}
+/* 1660px */
+
+@media(max-width: 1660px){
+    .lookbook__item h2, .lookbook__item span{
+        font-size: var(--text_36);
+    }
+    .lookbook__item{
+        background-position: 50%;
+    }
+    .lookbook__item p{
+        padding-left: 40%;
+    }
+}
+
+/* 1160px */
+
+@media(max-width: 1160px){
+    .lookbook__view{
+        width: 50%;
+        margin: 20px 50%;
+    }
+    .lookbook__item{
+        padding: 30px;
+        background-position: 70%;
+    }
+    .lookbook__item p{
+        padding-left: 40%;
+        height: 150px;
+    }
+    .banner__btn{
+        width: 50%;
+        margin-right: 0;
+    }
+
+}
+/* 820px */
+@media(max-width: 820px){
+    .banner{
+        height: 500px;
+        padding-top: 200px;
+    }
+    .banner__h1{
+        width: 50%;
+        margin: 0 25%;
+    } 
+    .banner__btn{
+        width: 50%;
+        text-align: center;
+        line-height: 15px;
+        font-size: var(--text_13);
+        bottom: 50px;
+        padding: 10px;
+    }
+    .lookbook{
+        flex-direction: column;
+    }
+    .catalog__tabs{
+        display: flex;
+        margin-top: 0;
+    }
+    .catalog__tab{
+        flex-direction: column;
+        margin-top: 0;
+        
+    }
+    .catalog__items{
+        margin-top: 0;
+        padding-top: 0;
+        height: 600px;
+        overflow-y: scroll;
+    }
+    .catalog__tab li{
+        margin: 0 0 20px;
+        
+    }
+    .catalog__tab a{
+        text-align: left;
+    }
+    .catalog__group-content{
+        flex-direction: column;
+    }
+    .catalog__two-items{
+        flex-direction: column;
+    }
+    .product__descr{
+        display: block;
+        position: relative;
+    }
+    .product{
+        border: 1px solid var(--dirty-white);
+    }
+    .lookbook__item{
+        width: 100%;
+        margin: 0 0 50px;
+    }
+}
+
+/* 506px */
+
+@media(max-width: 506px){
+
+    .product__descr{
+        padding: 5px 2%;
+    }
+}
+
+
+/* 2.4. MAIN MEDIA END */
 
 /* 2.MAIN END */
 
@@ -690,207 +942,10 @@ a.active-tab{
     margin-left: 40px;
     font-style: normal;
 }
-/* 3.FOOTER END */
+/* 3.3. MEDIA START */
 
-
-/* MEDIA START */
-
-/* MEDIA 2000px START */
-@media(min-width: 2000px){
-    .lookbook{
-        max-width: var(--max-width);
-        margin: 0 auto;
-    }
-    .lookbook h2, .lookbook span{
-        font-size: 48px;
-    }
-    .lookbook__item p{
-        font-size: 21px;
-        height: 250px;
-    }
-}
-/* MEDIA 2000px END */
-
-/* MEDIA 1660px START */
-@media(max-width: 1660px){
-    .header__nav-block{
-        background: var(--dirty-white);
-    }
-    .header__search {
-        width: 15%;
-    }
-    .header__search input{
-        background-color: var(--dirty-white);
-    }
-    .header__nav-list a{
-        margin-right: 20px;
-    }
-    .lookbook__item h2, .lookbook__item span{
-        font-size: var(--text_36);
-    }
-    .lookbook__item{
-        background-position: 50%;
-    }
-    .lookbook__item p{
-        padding-left: 40%;
-    }
-    .banner__btn{
-        width: 40%;
-    }
-}
-/* MEDIA 1660px END */
-
-/* MEDIA 1160px START */
-@media(max-width: 1160px){
-    .lookbook__view{
-        width: 50%;
-        margin: 20px 50%;
-    }
-    .lookbook__item{
-        padding: 30px;
-        background-position: 70%;
-    }
-    .lookbook__item p{
-        padding-left: 40%;
-        height: 150px;
-    }
-    .banner__btn{
-        width: 50%;
-        margin-right: 0;
-    }
-
-}
-/* MEDIA 1160px END */
-
-/* MEDIA 820px START */
+/* 820px */
 @media(max-width: 820px){
-    .header__nav{
-        display: none;
-    }
-    .header__nav-block{
-        padding-top: 50px;
-        opacity: 1;
-    }
-    .header__cart span{
-         display: none;
-    }
-    .header__cart-btn{
-        display: none;
-    }
-    .header__auth .header__cart{
-        width: auto;
-    }
-    .header__top-menu .container{
-        width: 90%;
-    }
-    .header__auth li{
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    .header__logo, .header__search{
-        position: relative;
-        top: 0;
-    }
-    .header__logo{
-        margin-left: 5%;
-    }
-    .header__nav-block .container{
-        display: flex;
-        align-items: center;
-        height: 50px;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .header__burger{
-        display: block;
-        margin-right: 5%;
-    }
-    .header__search{
-        display: none;
-    }
-    .banner{
-        height: 500px;
-        padding-top: 200px;
-    }
-    .banner__h1{
-        width: 50%;
-        margin: 0 25%;
-    } 
-    .banner__btn{
-        width: 50%;
-        text-align: center;
-        line-height: 15px;
-        font-size: var(--text_13);
-        bottom: 50px;
-        padding: 10px;
-    }
-    .header__search {
-        width: 30%;
-    }
-    .header__logo{
-        width: 30%;
-    }
-    .header__currency-list{
-        font-size: var(--text_13);
-    }
-    .header__sign-in{
-        text-align: center;
-    }
-    .header__nav-list a{
-        font-size: var(--text_21);
-        line-height: 20px;
-    }
-    .header__sub-parent::after{
-        display: none;
-    }
-    .header__nav li{
-        margin-bottom: 20px;
-    }
-    .header__nav-block.active .header__parent-li:first-child{
-        margin-top: 0px;
-    }
-    .lookbook{
-        flex-direction: column;
-    }
-    .catalog__tabs{
-        display: flex;
-        margin-top: 0;
-    }
-    .catalog__tab{
-        flex-direction: column;
-        margin-top: 0;
-        
-    }
-    .catalog__items{
-        margin-top: 0;
-        padding-top: 0;
-        height: 600px;
-        overflow-y: scroll;
-    }
-    .catalog__tab li{
-        margin: 0 0 20px;
-        
-    }
-    .catalog__tab a{
-        text-align: left;
-    }
-    .catalog__group-content{
-        flex-direction: column;
-    }
-    .catalog__two-items{
-        flex-direction: column;
-    }
-    .product__descr{
-        display: block;
-        position: relative;
-    }
-    .product{
-        border: 1px solid var(--dirty-white);
-    }
-    .lookbook__item{
-        width: 100%;
-        margin: 0 0 50px;
-    }
     .footer__menu{
         flex-wrap: wrap;
     }
@@ -922,9 +977,8 @@ a.active-tab{
         text-align: center;
     }
 }
-/* MEDIA 820px END */
 
-/* MEDIA 506px START */
+/* 506px */
 
 @media(max-width: 506px){
     .footer__column{
@@ -940,14 +994,12 @@ a.active-tab{
         padding: 60px 0;
         margin-top: 20px;
     }
-    .product__descr{
-        padding: 5px 2%;
-    }
+
 }
 
-/* MEDIA 506px END */
+/* 3.3. MEDIA END */
 
-/* MEDIA END */
+/* 3.FOOTER END */
 
 /* FONTS START */
 
