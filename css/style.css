@@ -404,6 +404,7 @@ a.active-tab{
 .product{
     position: relative;
     margin: 5px;
+    width: 100%;
 }
 .product img{
     width: 100%;
@@ -415,6 +416,9 @@ a.active-tab{
     position: absolute;
     top: 5px;
     left: 5px;
+}
+.product__info img{
+    width: 69px;
 }
 .sale{
     display: flex;
@@ -509,12 +513,11 @@ a.active-tab{
 .product__info{
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 60%;
     text-align: center;
     opacity: 0;
     transition: 0.3s;
-    width: 69px;
-    left:calc((100%-69px) / 2);
+    width: 100%;
 }
 .product:hover .product__info{
     opacity: 1;
