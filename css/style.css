@@ -1273,6 +1273,20 @@ a.active-tab{
 
 /* LOOKBOOK PAGE END */
 
+/* PRODUCT PAGE START */
+
+/* 2.1.BANNER START */
+.prod-banner h2 span{
+    color: var(--light-blue);
+}
+/* 2.1.BANNER END */
+
+/* 2.2.PRODUCT INFO START */
+
+/* 2.3.PRODUCT INFO END */
+
+/* PRODUCT PAGE END */
+
 
 /* FONTS START */
 
