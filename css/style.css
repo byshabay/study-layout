@@ -13,6 +13,7 @@
     --text_15: calc( (100vw - 300px)/(1780 - 300) * (15 - 11) + 11px);
     --text_21: calc( (100vw - 300px)/(1780 - 300) * (21 - 17) + 17px);
     --text_36: calc( (100vw - 300px)/(1780 - 300) * (36 - 30) + 30px);
+    --text_30: calc( (100vw - 300px)/(1780 - 300) * (30 - 24) + 24px);
     --text_48: calc( (100vw - 300px)/(1780 - 300) * (48 - 30) + 30px);
 }
 
@@ -1012,6 +1013,7 @@ a.active-tab{
     margin-top: 70px;
     text-transform: uppercase;
     color: #fff;
+    padding: 150px 0;
 }
 .lb-banner h1{
     font-family: var(--montserrat-light);
@@ -1024,7 +1026,11 @@ a.active-tab{
 }
 
 .lb-banner h2{
-    
+    font-family: var(--montserrat-light);
+    font-weight: normal;
+    font-size: var(--text_30);
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* 2.1. BANNER END */
