@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // 2.HEADER BACKGROUND AT SCROLL START
     $(document).scroll(function (e) {
-        $(window).scrollTop() > 100 ? $(".header__nav-block").addClass("scroll") : $(".header__nav-block").removeClass("scroll");
+        $(window).scrollTop() > 20 ? $(".header__nav-block").addClass("scroll") : $(".header__nav-block").removeClass("scroll");
     });
     // 2.HEADER BACKGROUND AT SCROLL END
 
