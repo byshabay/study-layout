@@ -1001,6 +1001,42 @@ a.active-tab{
 
 /* 3.FOOTER END */
 
+/* LOOKBOOK PAGE START */
+
+/* 2.MAIN START */
+
+/* 2.1. BANNER START */
+.lb-banner{
+    background: url("../images/lb-banner.png") center no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.lb-banner h1{
+    font-family: var(--montserrat-light);
+    font-weight: normal;
+    font-size: var(--text_48);
+    text-align: center;
+}
+.lb-banner__our{
+    font-family: var(--montserrat-bold);
+}
+
+.lb-banner h2{
+    
+}
+
+/* 2.1. BANNER END */
+
+/* 2.MAIN END */
+
+/* LOOKBOOK PAGE END */
+
+
+
+
+
 /* FONTS START */
 
 /* montserrat-regular - latin */

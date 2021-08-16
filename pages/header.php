@@ -1,4 +1,4 @@
-    <!-- 1.HEADER START -->
+  <!-- 1.HEADER START -->
     <header class="header">
         <!-- 1.1.HEADER TOP MENU START -->
         <section class="header__top-menu">
@@ -18,9 +18,9 @@
                     <li class="header__register"><a href="#">Register</a></li>
                     <li class="header__sign-in"><a href="#">Sign In</a></li>
                     <li class="header__cart header__parent-li">
-                        <img src="images/cart.png" alt="Корзина">
+                        <img src="/study-layout/images/cart.png" alt="Корзина">
                         <span> empty</span>
-                        <img class="header__cart-btn" src="images/cart-button.png">
+                        <img class="header__cart-btn" src="/study-layout/images/cart-button.png">
                         <div class="header__sub-content">
                             <div class="header__nav-submenu">
                                 <ul class="header__nav-submenu-1">
@@ -58,7 +58,7 @@
         <!-- 1.2.HEADER NAVIGATION MENU START -->
         <section class="header__nav-block">
             <div class="container">
-                <img class="header__logo" src="images/logo.png" alt="Логотип">
+              <a href="/study-layout/index.php">  <img class="header__logo" src = "/study-layout/images/logo.png" alt="Логотип"> </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__parent-li"><a class="header__sub-parent" href="#">mens</a>
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="header__parent-li"><a class="header__sub-parent" href="#">look book</a>
+                        <li class="header__parent-li"><a class="header__sub-parent" href="pages/lookbook.php">look book</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
                                     <ul class="header__nav-submenu-1">
