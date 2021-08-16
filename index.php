@@ -309,7 +309,7 @@
                 <p>See an item you like and click the  button to add it to your lookbook where you can create your own
                     perfect look.
                     It’s like your own boutique!</p>
-                <a href="#" class="lookbook__view">View now</a>
+                <a href="#" class="lookbook__view btn__view">View now</a>
             </div>
 
 

@@ -712,20 +712,22 @@ a.active-tab{
     background: url("../images/your_lb.png") no-repeat;
     background-size: cover;
 }
-.lookbook__view{
+.btn__view{
     color: var(--dark-grey);
     border: 2px solid var(--grey);
     padding: 20px 10px;
     display: block;
-    width: 40%;
     text-align: center;
-    margin: 40px 60%;
     font-size: var(--text_15);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
 }
-.lookbook__view:hover{
+.lookbook__view{
+    width: 40%;   
+    margin: 40px 60%;
+}
+.btn__view:hover{
     background-color: var(--light-blue);
     color: #fff;
     border: 2px solid var(--light-blue);
@@ -1034,6 +1036,69 @@ a.active-tab{
 }
 
 /* 2.1. BANNER END */
+
+/* 2.2. CATALOG START */
+.lb-catalog .catalog__group-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.jenes{
+    background: url("../images/jenes.png") center no-repeat;
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 5;  
+    padding: 40px 0 0 25px; 
+}
+.jenes p{
+    color: var(--light-grey);
+    font-size: var(--text_13);
+    line-height: 22px;
+    width: 35%;
+}
+.jenes__h1{
+    font-family: var(--montserrat-bold);
+    font-size: var(--text_48);
+    text-transform: uppercase;
+    color: var(--grey);
+}
+.jenes__text-1{
+    color: var(--grey);
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--text_13);
+}
+.jenes__text-2{
+    margin-bottom: 15px;
+}
+.jenes__btn{
+    width: 20%;
+    margin-top: 25px;
+}
+.win{
+    background: url("../images/Win.png") 90% no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 4;   
+    padding: 40px 0 0 25px; 
+}
+.win p{
+    color: var(--light-grey);
+    font-size: var(--text_13);
+    line-height: 22px;
+    width: 35%;
+}
+.lb-catalog .product{
+    margin: 0;
+}
+.lb-catalog .product img{
+    height: 100%;
+}
+.lb-catalog .product .product__descr{
+    margin-top: -5px;
+}
+/* 2.3. CATALOG END */
 
 /* 2.MAIN END */
 
