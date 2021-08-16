@@ -332,7 +332,19 @@
             <hr>
         </section>
         <!-- 2.2. CATALOG END -->
+        <!-- 2.3. LOOKBOOKS BLOCK START -->
+        <?php
+            include("lb-blocks.php");
+        ?>
+        <!-- 2.3. LOOKBOOKS BLOCK END -->
     </main>
+
+    <!-- 3. FOOTER START -->
+    <?php
+        include("footer.php");
+    ?>
+
+    <!-- 3. FOOTER END -->
 
     <!-- 2.MAIN END -->
     

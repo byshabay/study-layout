@@ -147,25 +147,21 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="header__parent-li"><a class="header__sub-parent" href="pages/lookbook.php">look book</a>
+                        <li class="header__parent-li lookbook-sub"><a class="header__sub-parent" href="/study-layout/pages/lookbook.php">look book</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
                                     <ul class="header__nav-submenu-1">
-                                        <div>Casuals</div>
-                                        <li><a href="#">Jackets</a></li>
-                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                        <li><a href="#">Polo Shirts</a></li>
-                                        <li><a href="#">Sportswear</a></li>
-                                        <li><a href="#">Trousers & Chinos</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
+                                        <div>Our Lookbooks</div>
+                                        <li><a href="#">Latest Posts (mixed)</a></li>
+                                        <li><a href="#">Men’s Lookbook</a></li>
+                                        <li><a href="#">Women’s Lookbook</a></li>
                                     </ul>
 
                                     <ul class="header__nav-submenu-2">
-                                        <div>Formal</div>
-                                        <li><a href="#">Jackets</a></li>
-                                        <li><a href="#">Shirts</a></li>
-                                        <li><a href="#">Suits</a></li>
-                                        <li><a href="#">Trousers</a></li>
+                                        <div>Your Lookbook</div>
+                                        <li><a href="#">View and Edit</a></li>
+                                        <li><a href="#">Share</a></li>
+                                        <li><a href="#">Delete</a></li>
 
                                     </ul>
                                 </div>

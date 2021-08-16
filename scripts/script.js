@@ -12,21 +12,9 @@ $(document).ready(function () {
     // 2.HEADER BACKGROUND AT SCROLL END
 
     // 3.HEADER ACTIVE LINK START 
-    // var url = $(location).attr('href');
-
-    // $(".header__nav-list a").each(function () {
-    //     if ($(this).attr("href") == url) {
-    //         $(this).addClass("active_link");
-    //     }
-    // });
-
-    // // $.each($(".header__nav-list a"), function () {
-    // //     if ($(this).href == url) {
-    // //         $(this).addClass("active_link");
-    // //     }
-    // // })
-
-
+    $(".header__nav li a").each(function () {
+        if (this.href == location.href) $(this).addClass('active-link');
+    });
 
     // 3.HEADER ACTIVE LINK END
 

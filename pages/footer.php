@@ -54,10 +54,10 @@
                     <div>Fashion Awards 2016</div>
                 </div>
                 <div class="footer__social">
-                    <a href="#"><img src="images/facebook.png" alt=""></a>
-                    <a href="#"><img src="images/twitter.png" alt=""></a>
-                    <a href="#"><img src="images/instagram.png" alt=""></a>
-                    <a href="#"><img src="images/pinterest.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/facebook.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/twitter.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/instagram.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/pinterest.png" alt=""></a>
                 </div>
 
             </div>
