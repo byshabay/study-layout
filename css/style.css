@@ -295,7 +295,7 @@ input::-webkit-search-results-decoration {
 .header__nav.active{
     display: flex;
     position: absolute;
-    margin-top: 190px;
+    margin-top: 260px;
     width: 100%;
     padding: 200px 0 0 2%;
 }
@@ -807,6 +807,11 @@ a.active-tab{
         width: 50%;
         margin-right: 0;
     }
+        .lookbook__item{
+        background-color: var(--dirty-white);
+        background-position: 0;
+        background-size: contain;
+    }
 
 }
 /* 820px */
@@ -877,6 +882,17 @@ a.active-tab{
 
     .product__descr{
         padding: 5px 2%;
+    }
+    .product__info img{
+        width: 20%;
+    }
+
+    .lookbook__view{
+        margin: 0px 50%;
+        padding: 5px 10px;
+    }
+    .lookbook__item h2, .lookbook__item span{
+        font-size: var(--text_21)
     }
 }
 
@@ -1192,6 +1208,9 @@ a.active-tab{
     .jenes, .win{
         padding-top: 50px;
     }
+    .lb-catalog .product__info img{
+        width: 20%;
+    }
 }
 /* 800px */
 @media(max-width: 800px){
@@ -1233,8 +1252,19 @@ a.active-tab{
     .jenes p{
         font-size: var(--text_13);
         line-height: 20px;
-        margin: 10px 0
+        margin: 10px 0;
+        width: 90%;
+        line-height: 15px;
+        text-align: justify;
     }
+    .jenes, .win {
+        padding-top: 10px;
+    }
+    .jenes__btn {
+        width: 90%;
+        padding: 10px;;
+    }
+
 }
 
 /* 2.4. MEDIA END */

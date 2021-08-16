@@ -68,30 +68,10 @@
                                         <sup>REF</sup>
                                         M1
                                     </div>
-                                    <img src="../images/cat_1.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
-                                    <div class="product__info">
+                                   <a href="product.php"> <img src="../images/cat_1.png" alt=""> </a>
+                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                        <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                             <div class="product">
@@ -99,30 +79,10 @@
                                         <sup>REF</sup>
                                         M1
                                     </div>
-                                    <img src="../images/cat_2.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
-                                    <div class="product__info">
+                                    <a href="product.php"><img src="../images/cat_2.png" alt=""></a>
+                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                        <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                             <div class="product jenes">
@@ -155,29 +115,10 @@
                                         M1
                                     </div>
                                     <img src="../images/cat_1.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
+                        
                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                         <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                             <div class="product">
@@ -186,29 +127,10 @@
                                         M1
                                     </div>
                                     <img src="../images/cat_6.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
+                
                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                        <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                              <div class="product">
@@ -217,29 +139,10 @@
                                         M1
                                     </div>
                                     <img src="../images/cat_1.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
+                                    
                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                         <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                             <div class="product">
@@ -248,29 +151,10 @@
                                         M1
                                     </div>
                                     <img src="../images/cat_2.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
+            
                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                         <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                             <div class="product win">
@@ -297,29 +181,9 @@
                                         M1
                                     </div>
                                     <img src="../images/cat_1.png" alt="">
-                                    <div class="product__descr">
-                                        <div class="product__name">Womens burnt orange casual tee £29.95</div>
-                                        <div>Classic casual t-shirt for women on the move.
-                                            100% cotton.</div>
-                                        <div class="product__btns">
-                                            <a class="product__btn" href="#">
-                                                <div class="product__cart"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__wish"></div>
-                                            </a>
-                                            <a class="product__btn" href="#">
-                                                <div class="product__size"></div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                    <div class="product__mini-imgs">
-                                        <img src="../images/front.png" alt="">
-                                        <img src="../images/back.png" alt="">
-                                    </div>
                                     <div class="product__info">
                                         <img src="../images/info.png" alt="">
+                                         <img src="../images/lb-wish.png" alt="">
                                     </div>
                             </div>
                         </section>

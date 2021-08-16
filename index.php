@@ -66,7 +66,7 @@
                                             20
                                         </div>
                                         <div class="product__info">
-                                            <img src="images/info.png" alt="">
+                                           <a href="pages/product.php"> <img src="images/info.png" alt=""> </a>
                                         </div>
                                         <img src="images/cat_1.png" alt="">
                                         <div class="product__descr">
@@ -99,7 +99,7 @@
                                             <sup>&pound;</sup>
                                             20
                                         </div>
-                                        <img src="images/cat_2.png" alt="">
+                                       <a href="pages/product.php"><img src="images/cat_2.png" alt=""></a> 
                                         <div class="product__descr">
                                             <div class="product__name">Womens burnt orange casual tee £29.95</div>
                                             <div>Classic casual t-shirt for women on the move.
