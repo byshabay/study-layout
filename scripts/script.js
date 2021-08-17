@@ -31,6 +31,12 @@ $(document).ready(function () {
     });
     // 4.CATALOG TABS END
 
+    // 5.SLIDER 
+
+    $(".card__slider").slick();
+
+    // 5.SLIDER
+
 
 
 
