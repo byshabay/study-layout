@@ -61,6 +61,32 @@
 
                 <div class="card__features-1">
                     <a class="card__name" href="#">Ave classic sweatshirt </a>
+                    <ul class="review__list">
+                        <li class="review__items"><a href="#">
+                                <ul>
+                                    <li class="review__stars"><a href="#"><img src="../images/star.png" alt=""></a></li>
+                                    <li class="review__stars"><a href="#"><img src="../images/star.png" alt=""></a></li>
+                                    <li class="review__stars"><a href="#"><img src="../images/star.png" alt=""></a></li>
+                                    <li class="review__stars"><a href="#"><img src="../images/star.png" alt=""></a></li>
+                                    <li class="review__stars"><a href="#"><img src="../images/star_grey.png" alt=""></a></li>
+                                </ul>
+                                <a href="#" class="review__amount">3 Review(s)</a>
+                            </a></li>
+                        <li class="review__items"><a href="#">Add review</a></li>
+                        <li class="review__items">
+                            Share:
+                            <ul class="review__social-list">
+                                <li class="review__social"><a href="#"><img src="../images/facebook-grey.png" alt=""></a></li>
+                                <li class="review__social"><a href="#"><img src="../images/twitter-grey.png" alt=""></a></li>
+                                <li class="review__social"><a href="#"><img src="../images/google-grey.png" alt=""></a></li>
+                                <li class="review__social"><a href="#"><img src="../images/pinterest-grey.png" alt=""></a></li>
+                                <li class="review__social"><a href="#"><img src="../images/instagram-grey.png" alt=""></a></li>
+                                <li class="review__social"><a href="#"><img src="../images/envelope.png" alt=""></a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
                 </div>
 
 
