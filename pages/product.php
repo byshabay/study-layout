@@ -52,16 +52,24 @@
 
                 <div class="card__slider">
                     <div class="card__slide">
-                        <img src="../images/prod_1.png" alt="">
+                        <a data-fancybox="gallery" href="../images/prod_1.png">
+                            <img src="../images/prod_1.png" alt="">
+                        </a>
                     </div>
                     <div class="card__slide">
-                        <img src="../images/cat_2.png" alt="">
+                        <a data-fancybox="gallery" href="../images/cat_2.png">
+                            <img src="../images/cat_2.png" alt="">
+                        </a>
                     </div>
                     <div class="card__slide">
-                        <img src="../images/cat_1.png" alt="">
+                        <a data-fancybox="gallery" href="../images/cat_1.png">
+                            <img src="../images/cat_1.png" alt="">
+                        </a>
                     </div>
                     <div class="card__slide">
-                        <img src="../images/cat_6.png" alt="">
+                        <a data-fancybox="gallery" href="../images/cat_6.png">
+                            <img src="../images/cat_6.png" alt="">
+                        </a>
                     </div>
                 </div>
 
