@@ -31,11 +31,24 @@ $(document).ready(function () {
     });
     // 4.CATALOG TABS END
 
-    // 5.SLIDER 
+    // 5.SLIDER START
 
     $(".card__slider").slick();
 
-    // 5.SLIDER
+    // 5.SLIDER END
+
+    // 6.QTY COUNTER START
+    var val = $('.card__qty').val();
+
+    $("#down").click(function (e) {
+        val--;
+        $('.card__qty').val(val);
+    });
+    $("#up").click(function (e) {
+        val++;
+        $('.card__qty').val(val);
+    });
+    // 6.QTY END
 
 
 

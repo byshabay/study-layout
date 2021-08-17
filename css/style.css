@@ -1348,7 +1348,6 @@ a.active-tab{
 .review__items, .review__list{
     display: flex;
     align-items: stretch;
-    justify-content: flex-start;
 }
 .review__list{
     margin-top: 20px;
@@ -1402,11 +1401,49 @@ a.active-tab{
     color: var(--dark-white);
     font-family: var(--montserrat-light);
     font-size: var(--text_30);
-    margin-top: 20px;
+    margin: 20px 0 30px;
 }
 .card__price sup{
     font-size: var(--text_15);
     margin-right: -4px;
+}
+.card__features-items{
+    color: var(--dark-white);
+    line-height: 35px;
+    font-size: var(--text_15);
+}
+.card__features-name{
+    font-family: var(--montserrat-bold);
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-right: 5px;
+}
+.card__tags{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+.card__description{
+    line-height: 27px;
+    margin: 20px 0;
+}
+.card__description li{
+    list-style: inside;
+}
+.card__features-lists{
+    display: flex;
+}
+.card__features-list .card__features-name{
+    margin-bottom: 15px;
+}
+.card__list{
+    padding: 10px 5px;
+    color: var(--dark-white);
+    font-size: var(--text_13);
+    font-family: var(--montserrat-light);
+    border: 1px solid var(--dark-white);
+    border-radius: 3px;
+    height: 40px;
+
 }
 
 /* 2.3.PRODUCT INFO END */

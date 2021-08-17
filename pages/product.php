@@ -97,13 +97,71 @@
                             89.99
                         </span>
                     </div>
+                    <p class="card__features-items">
+                        <span class="card__features-name">
+                            Availability:
+                        </span>
+                        In stock
+                    </p>
+                    <p class="card__features-items">
+                        <span class="card__features-name">
+                            Product Code:
+                        </span>
+                        #499577
+                    </p>
 
+                    <p class="card__features-items card__tags">
+                        <span class="card__features-name">
+                            Tags:
+                        </span>
+                        Classic, Casual, V-neck, Loose
+                    </p>
+                    <p class="card__features-items card__description">
+                        Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+                    </p>
+                    <ul class="card__features-items card__description">
+                        <li>Elasticated cuffs</li>
+                        <li>Casual fit</li>
+                        <li>100% Cotton</li>
+                        <li>Free shipping with 4 days delivery</li>
+                    </ul>
+                    <div class="card__features-lists">
+                        <div class="card__features-list">
+                            <div class="card__features-name">
+                                Color
+                            </div>
+                            <select class="card__list">
+                                <option value="" disabled selected>Select Colour</option>
+                                <option value="1">EUR</option>
+                                <option value="2">MYR</option>
+                                <option value="3">HRD</option>
+                                <option value="4">RUB</option>
+                            </select>
+                        </div>
+
+                        <div class="card__features-list">
+                            <div class="card__features-name">
+                                Size
+                            </div>
+                            <select class="card__list">
+                                <option value="" disabled selected>Select Size</option>
+                                <option value="1">EUR</option>
+                                <option value="2">MYR</option>
+                                <option value="3">HRD</option>
+                                <option value="4">RUB</option>
+                            </select>
+                        </div>
+                        <div class="card__features-list">
+                            <div class="card__features-name">
+                                QTY
+                            </div>
+                            <input class="card__list card__qty" type="number" value="1">
+                            <input type="button" value=" - " id="down" />
+                            <input type="button" value=" + " id="up" />
+                        </div>
+
+                    </div>
                 </div>
-
-
-
-
-
             </div>
         </section>
         <!-- 2.2.PRODUCT INFO START -->
