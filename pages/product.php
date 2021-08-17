@@ -155,12 +155,34 @@
                             <div class="card__features-name">
                                 QTY
                             </div>
-                            <input class="card__list card__qty" type="number" value="1">
-                            <input type="button" value=" - " id="down" />
-                            <input type="button" value=" + " id="up" />
+                            <form class="card__qty-block">
+                                <input class="card__list card__qty" type="number" value="1">
+                                <input class="card__up" type="button" value=" + " id="up" />
+                                <input class="card__down" type="button" value=" - " id="down" />
+                            </form>
+
                         </div>
 
                     </div>
+                    <div class="card__btns">
+                        <a class="card__btn">
+                            <div class="card__cart-img"></div>
+                            <div> Add to cart </div>
+                        </a>
+                        <a class="card__btn">
+                            <div class="card__like-img"></div>
+                            <div> Add to lookbook</div>
+                        </a>
+
+
+                    </div>
+                    <div class="card__compare">
+                        <div class="card__compare-img"></div>
+                        <div class="card__features-name">Add to compare</div>
+
+                    </div>
+
+
                 </div>
             </div>
         </section>

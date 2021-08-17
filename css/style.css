@@ -1330,7 +1330,10 @@ a.active-tab{
     overflow: hidden;
 }
 .card__slide img{
+    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card.container{
     width: 70%;
@@ -1401,7 +1404,7 @@ a.active-tab{
     color: var(--dark-white);
     font-family: var(--montserrat-light);
     font-size: var(--text_30);
-    margin: 20px 0 30px;
+    margin: 15px 0 25px;
 }
 .card__price sup{
     font-size: var(--text_15);
@@ -1409,7 +1412,7 @@ a.active-tab{
 }
 .card__features-items{
     color: var(--dark-white);
-    line-height: 35px;
+    line-height: 32px;
     font-size: var(--text_15);
 }
 .card__features-name{
@@ -1423,14 +1426,22 @@ a.active-tab{
     font-weight: bold;
 }
 .card__description{
-    line-height: 27px;
-    margin: 20px 0;
+    line-height: 25px;
+    margin: 15px 0;
 }
 .card__description li{
     list-style: inside;
 }
 .card__features-lists{
-    display: flex;
+    display: flex; 
+    margin-top: 20px;
+}
+.card__features-list{
+    margin-right: 30px;
+    width: 25%;
+}
+.card__features-list:last-child{
+    width: auto;
 }
 .card__features-list .card__features-name{
     margin-bottom: 15px;
@@ -1443,9 +1454,106 @@ a.active-tab{
     border: 1px solid var(--dark-white);
     border-radius: 3px;
     height: 40px;
-
+    width: 100%;
+}
+.card__qty-block{
+    position: relative;  
+}
+.card__qty{
+    width: 60px;
+}
+.card__down, .card__up{
+    right: 0;
+    position: absolute;
+    background-color: #fff;
+    font-size: 0;
+    height: 20px;
+    width: 30px;
+    border: 1px solid var(--dark-white);
+    
+}
+.card__up{
+    background: url("../images/upload.png") center no-repeat;
+    background-size: 30%;
+    top: 0;
+    border-bottom: 0px;
+    border-radius: 0 3px 0 0;
+}
+.card__down{
+    background: url("../images/arrow-down-sign-to-navigate.png") center no-repeat;
+    background-size: 30%;
+    bottom: 0;
+    border-radius:0 0 3px 0;
+}
+.card__btns{
+    display: flex;
+    align-items: center;
+}
+.card__btn{
+    display: flex;
+    border: 2px solid var(--dark-grey);
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    font-size: var(--text_15);
+    padding: 20px;
+    justify-content: center; 
+    margin: 30px 40px 0 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.card__cart-img{
+    width: 20px;
+    height: 20px;
+    background: url("../images/shopping-cart-empty-side-view.png") center no-repeat;
+    margin-right: 20px;
+    background-size: 100%;
+    transition: 0.3s;
+}
+.card__like-img{
+    width: 20px;
+    height: 20px;
+    background: url("../images/heart.png") center no-repeat;
+    margin-right: 20px;
+    background-size: 100%;
+    transition: 0.3s;
 }
 
+.card__btn img{
+    display: block;
+    width: 20px;
+    margin-right: 20px;
+}
+.card__btn:hover{
+    background-color: var(--dark-grey);
+    color: #fff;
+    transition: 0.3s;
+}
+.card__btn:hover .card__cart-img{
+    background: url("../images/shopping.png") center no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+.card__btn:hover .card__like-img{
+    background: url("../images/like.png") center no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+.card__compare-img{
+    width: 30px;
+    height: 30px;
+    background: url("../images/opposite-arrows-couple-pointing-to-center-in-diagonal-position.png") center no-repeat;
+    background-size: 70%;
+    background-color: var(--light-grey);
+    transform: rotate(90deg);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.card__compare{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: var(--text_15);
+}
 /* 2.3.PRODUCT INFO END */
 
 /* PRODUCT PAGE END */
