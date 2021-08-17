@@ -10,9 +10,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="../scripts/script.js"></script>
 </head>
 
@@ -35,7 +37,11 @@
                 </span>
             </h1>
             <h2>
-                mens - casuals - hoodies & sweatshirts - <span>ave classic sweatshirt</span>
+                <a href="#">mens -</a>
+                <a href="#">casuals -</a>
+                <a href="#">hoodies & sweatshirts -</a>
+                <a href="#"><span>ave classic sweatshirt</span></a>
+
             </h2>
         </section>
 
@@ -60,7 +66,7 @@
                 </div>
 
                 <div class="card__features-1">
-                    <a class="card__name" href="#">Ave classic sweatshirt </a>
+                    <span class="card__name">Ave classic sweatshirt </span>
                     <ul class="review__list">
                         <li class="review__items"><a href="#">
                                 <ul>
@@ -76,12 +82,18 @@
                         <li class="review__items">
                             Share:
                             <ul class="review__social-list">
-                                <li class="review__social"><a href="#"><img src="../images/facebook-grey.png" alt=""></a></li>
-                                <li class="review__social"><a href="#"><img src="../images/twitter-grey.png" alt=""></a></li>
-                                <li class="review__social"><a href="#"><img src="../images/google-grey.png" alt=""></a></li>
-                                <li class="review__social"><a href="#"><img src="../images/pinterest-grey.png" alt=""></a></li>
-                                <li class="review__social"><a href="#"><img src="../images/instagram-grey.png" alt=""></a></li>
-                                <li class="review__social"><a href="#"><img src="../images/envelope.png" alt=""></a></li>
+                                <li class="review__social card__facebook"><a href="#">
+                                    </a></li>
+                                <li class="review__social card__tw"><a href="#">
+                                    </a></li>
+                                <li class="review__social card__gg"><a href="#">
+                                    </a></li>
+                                <li class="review__social card__pntr"><a href="#">
+                                    </a></li>
+                                <li class="review__social card__ig"><a href="#">
+                                    </a></li>
+                                <li class="review__social card__mail"><a href="#">
+                                    </a></li>
                             </ul>
 
                         </li>
@@ -114,7 +126,11 @@
                         <span class="card__features-name">
                             Tags:
                         </span>
-                        Classic, Casual, V-neck, Loose
+                        <a href="#">Classic,</a>
+                        <a href="#">Casual,</a>
+                        <a href="#">V-neck,</a>
+                        <a href="#">Loose</a>
+
                     </p>
                     <p class="card__features-items card__description">
                         Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
@@ -165,22 +181,22 @@
 
                     </div>
                     <div class="card__btns">
-                        <a class="card__btn">
+                        <button class="card__btn">
                             <div class="card__cart-img"></div>
                             <div> Add to cart </div>
-                        </a>
-                        <a class="card__btn">
+                        </button>
+                        <button class="card__btn">
                             <div class="card__like-img"></div>
                             <div> Add to lookbook</div>
-                        </a>
+                        </button>
 
 
                     </div>
-                    <div class="card__compare">
+                    <a href="#" class="card__compare">
                         <div class="card__compare-img"></div>
                         <div class="card__features-name">Add to compare</div>
 
-                    </div>
+                    </a>
 
 
                 </div>
