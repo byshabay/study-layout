@@ -185,6 +185,52 @@
 
                 </div>
             </div>
+            <div id="tabs" class="catalog__tabs">
+
+                <ul class="catalog__tab">
+                    <li>
+                        <a class="active-tab" href="#tab-1">Description</a>
+                    </li>
+                    <li>
+                        <a href="#tab-2">Video </a>
+                    </li>
+                    <li>
+                        <a href="#tab-3">Size & Specs</a>
+                    </li>
+                    <li>
+                        <a href="#tab-4">Delivery & Returns</a>
+                    </li>
+                    <li>
+                        <a href="#tab-5">Reviews</a>
+                    </li>
+                </ul>
+                <div class="catalog__items">
+                    <div class="catalog__item card__desk-block" id="tab-1">
+                        <div class="card__desk-h1">
+                            Nunc egestas posuere enim, eu maximus erat posuere eget
+                        </div>
+                        <p class="card__desk-p">
+                            Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.
+                        </p>
+                        <p>
+                            Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.
+                        </p>
+                    </div>
+                    <div class="catalog__item" id="tab-2">
+                        текст 2
+                    </div>
+                    <div class="catalog__item" id="tab-2">
+                        текст 3
+                    </div>
+                    <div class="catalog__item" id="tab-2">
+                        текст 4
+                    </div>
+                    <div class="catalog__item" id="tab-2">
+                        текст 5
+                    </div>
+
+                </div>
+            </div>
         </section>
         <!-- 2.2.PRODUCT INFO START -->
 

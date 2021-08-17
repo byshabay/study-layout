@@ -1337,7 +1337,7 @@ a.active-tab{
 }
 .card.container{
     width: 70%;
-    margin-top: 50px;
+    margin: 50px auto 150px;
 }
 .card__features-1{
     width: 54%;
@@ -1553,6 +1553,43 @@ a.active-tab{
     align-items: center;
     margin-top: 30px;
     font-size: var(--text_15);
+}
+
+.card .catalog__tab{
+    background-color: var(--dirty-white);
+}
+.card .catalog__tab a{
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s;
+}
+.card .catalog__tab a.active-tab{
+    color: #fff;
+    background-color: var(--dark-grey);
+    transition: 0.3s;
+}
+.card .catalog__tab a:hover{
+    color: #fff;
+    background-color: var(--dark-grey);
+    transition: 0.3s;
+}
+.card__desk-h1{
+    text-transform: uppercase;
+    font-weight: var(--text_13);
+    color: var(--light-grey);
+}
+.card__desk-block p{
+    font-size: var(--text_15);
+    color: var(--light-grey) ;
+    width: 98%;
+}
+.card__desk-p{
+    margin: 20px 0 25px;
+}
+.card .catalog__items{
+    margin-top: 30px;
 }
 /* 2.3.PRODUCT INFO END */
 
