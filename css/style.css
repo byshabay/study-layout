@@ -4,6 +4,7 @@
     --light-blue: #00c8c8;
     --grey: #575153;
     --light-grey: #727272;
+    --dark-white:#9a9a9a;
     --dirty-white: #f8f8f8;
     --montserrat: "Montserrat", Arial, Helvetica, sans-serif;
     --montserrat-bold: "Montserrat-Bold", Arial, Helvetica, sans-serif;
@@ -1388,11 +1389,26 @@ a.active-tab{
 .review__items a, .review__items{
     font-family: var(--montserrat-bold);
     font-size: var(--text_13);
-    color: var(--light-grey);
+    color: var(--dark-white);
 }
 .review__items a:hover{
     color: var(--light-blue);
 }
+.old-price{
+    text-decoration:line-through;
+    margin-right: 10px;
+}
+.card__price{
+    color: var(--dark-white);
+    font-family: var(--montserrat-light);
+    font-size: var(--text_30);
+    margin-top: 20px;
+}
+.card__price sup{
+    font-size: var(--text_15);
+    margin-right: -4px;
+}
+
 /* 2.3.PRODUCT INFO END */
 
 /* PRODUCT PAGE END */

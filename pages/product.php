@@ -87,6 +87,17 @@
                         </li>
 
                     </ul>
+                    <div class="card__price">
+                        <sup>&pound;</sup>
+                        <span class="old-price">
+                            107
+                        </span>
+                        <span class="card__sale">
+                            <sup>&pound;</sup>
+                            89.99
+                        </span>
+                    </div>
+
                 </div>
 
 
