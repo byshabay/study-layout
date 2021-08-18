@@ -15,8 +15,8 @@
               </div>
 
               <ul class="header__auth">
-                  <li class="header__register"><a href="#">Register</a></li>
-                  <li class="header__sign-in"><a href="#">Sign In</a></li>
+                  <li class="header__register"><a href="/study-layout/pages/auth.php">Register</a></li>
+                  <li class="header__sign-in"><a href="/study-layout/pages/auth.php">Sign In</a></li>
                   <li class="header__cart header__parent-li">
                       <img src="/study-layout/images/cart.png" alt="Корзина">
                       <span> empty</span>

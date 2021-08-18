@@ -68,6 +68,16 @@ body{
 .common-banner h2 a{
     color: #fff;
 }
+.title-p{
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: var(--text_18);
+    font-weight: bold;
+}
+.title-p.content__title{
+    font-size: var(--text_13);
+    margin: 20px 0;
+}
 .btn__view{
     color: var(--dark-grey);
     border: 2px solid var(--grey);
@@ -1808,16 +1818,7 @@ a.active-tab{
     flex-direction: column;
     justify-content: flex-end;
 }
-.title-p{
-    text-transform: uppercase;
-    color: var(--grey);
-    font-size: var(--text_18);
-    font-weight: bold;
-}
-.title-p.content__title{
-    font-size: var(--text_13);
-    margin: 20px 0;
-}
+
 .brand p{
     font-size: var(--text_15);
     line-height: 22px;
