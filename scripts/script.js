@@ -50,6 +50,10 @@ $(document).ready(function () {
     });
     // 6.QTY END
 
+    // 7.FIX SLICK + FANCYBOX START
+    $(".slick-cloned a").removeAttr("data-fancybox");
+    // 7.FIX SLICK + FANCYBOX END
+
 
 
 

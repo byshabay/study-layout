@@ -1722,9 +1722,11 @@ a.active-tab{
 @media(max-width: 960px){
     .card__top-info{
         flex-direction: column;
+        position: relative;
     }
     .card__slider{
         width: 100%;
+        margin-top: 50px;
     }
     .card__features-1{
         width: 100%;
@@ -1745,7 +1747,8 @@ a.active-tab{
         text-align: center;
         width: 100%;
         display: block;
-        margin-top: 20px;
+        top: 0;
+        position: absolute;
     }
     .card__features-lists{
         justify-content: center;

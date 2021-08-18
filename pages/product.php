@@ -14,7 +14,7 @@
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="../scripts/script.js"></script>
 </head>
 
@@ -50,10 +50,10 @@
         <section class="card container">
             <div class="card__top-info">
 
-                <div class="card__slider">
+                <div class="card__slider ">
                     <div class="card__slide">
                         <a data-fancybox="gallery" href="../images/prod_1.png">
-                            <img src="../images/prod_1.png" alt="">
+                            <img src="../images/prod_1.png" alt="123">
                         </a>
                     </div>
                     <div class="card__slide">
