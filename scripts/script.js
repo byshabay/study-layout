@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     // 4.CATALOG TABS START
 
-    var tab = $("#tabs .catalog__items > div");
+    var tab = $(".catalog__items > div");
     tab.hide().filter(':first').show();
 
     $(".catalog__tab a").click(function (e) {
@@ -62,8 +62,5 @@ $(document).ready(function () {
     $(".slick-cloned a").removeAttr("data-fancybox");
 
     // 7.FIX SLICK + FANCYBOX END
-
-
-
 
 });

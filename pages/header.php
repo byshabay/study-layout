@@ -119,7 +119,7 @@
                           </div>
                       </li>
                       <li><a href="/study-layout/pages/brand.php">the brand</a></li>
-                      <li class="header__parent-li"><a class="header__sub-parent" href="#">local stores</a>
+                      <li class="header__parent-li"><a class="header__sub-parent" href="/study-layout/pages/localstore.php">local stores</a>
                           <div class="header__sub-content">
                               <div class="header__nav-submenu">
                                   <ul class="header__nav-submenu-1">

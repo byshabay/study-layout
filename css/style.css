@@ -68,6 +68,22 @@ body{
 .common-banner h2 a{
     color: #fff;
 }
+.btn__view{
+    color: var(--dark-grey);
+    border: 2px solid var(--grey);
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+    font-size: var(--text_15);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.btn__view:hover{
+    background-color: var(--light-blue);
+    color: #fff;
+    border: 2px solid var(--light-blue);
+}
 
 /* COMMON MEDIA START */
 @media(min-width: 2000px){
@@ -909,26 +925,12 @@ a.active-tab{
     background: url("../images/your_lb.png") no-repeat;
     background-size: cover;
 }
-.btn__view{
-    color: var(--dark-grey);
-    border: 2px solid var(--grey);
-    padding: 20px 10px;
-    display: block;
-    text-align: center;
-    font-size: var(--text_15);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
+
 .lookbook__view{
     width: 40%;   
     margin: 40px 60%;
 }
-.btn__view:hover{
-    background-color: var(--light-blue);
-    color: #fff;
-    border: 2px solid var(--light-blue);
-}
+
 /* 2.3.HOME LOOKBOOK END */
 
 /* 2.4.HOME MAIN MEDIA START */
@@ -1812,7 +1814,7 @@ a.active-tab{
     font-size: var(--text_18);
     font-weight: bold;
 }
-.brand .content__title{
+.title-p.content__title{
     font-size: var(--text_13);
     margin: 20px 0;
 }
@@ -1909,10 +1911,136 @@ a.active-tab{
 
 /* 2.BRAND MAIN END */
 
-
-
 /* BRAND PAGE END */
 
+/* LOCAL STORE PAGE START */
+
+/* 2.2.ADDRESSES START */
+.main .container{
+    width: 70%;
+}
+.addresses__tabs{
+    display: flex;
+    margin: 50px auto;
+    justify-content:space-between ;
+}
+.addresses__tab{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    
+}
+.addresses__tab .btn__view{
+    width: 70%;
+    margin-top: 30px;
+}
+.addresses p{
+    font-size: var(--text_15);
+    line-height: 22px;
+    color: var(--light-grey);
+}
+.addresses a.active-tab{
+    color: #fff;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+}
+.addresses .catalog__tab a:hover{
+    color: #fff;
+}
+.addresses__item{
+    display: flex;
+    
+}
+.addresses__item .addresses__tab{
+    background-color: var(--dirty-white);
+    padding: 40px;
+    width: 50%;
+
+}
+.addresses__info{
+    margin-top: 20px;
+}
+.addresses__info div{
+    display: flex;
+    align-items:center;
+    margin: 15px 0;
+}
+.addresses__info img{
+    width: 20px;
+    margin-right: 20px;
+}
+.addresses__info a, .addresses__info{
+    font-size: var(--text_13);
+    color: var(--light-grey);
+}
+.addresses__social .fb{
+    background: url("../images/facebook.png") center no-repeat;
+    background-color: var(--grey);
+    background-size: 70%;
+}
+.addresses__social .tw{
+    background: url("../images/twitter.png") center no-repeat;
+    background-color: var(--grey);
+    background-size: 60%;
+}
+.addresses__social .ig{
+    background: url("../images/instagram.png") 50% 48% no-repeat;
+    background-color: var(--grey);
+    background-size: 50%;
+}
+.addresses__social .ptrs{
+    background: url("../images/pinterest.png") center no-repeat;
+    background-color: var(--grey);
+    background-size: 50%;
+}
+.addresses__soc-ico{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+.addresses__social .addresses__soc-ico:hover{
+    background-color: var(--light-blue);
+}
+
+.addresses__social {
+    margin: 40px 0 50px;
+}
+.map{
+    width: 60%;
+    height: auto;
+}
+/* 2.2.ADDRESSES END */
+
+/* 3.LOCAL STORE MEDIA START */
+@media(max-width: 940px){
+    .addresses__tabs{
+        flex-direction: column;
+    }
+    .addresses .addresses__tab{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .addresses__item{
+        flex-direction: column;
+    }
+    .map{
+        height: 250px;
+        width: 100%;
+    }
+}
+@media(min-width:2000px){
+    .addresses{
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+}
+/* 3.LOCAL STORE MEDIA END */
+
+/* LOCAL STORE PAGE END */
 
 /* FONTS START */
 
