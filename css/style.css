@@ -143,7 +143,7 @@ body{
 /* 1.2.HEADER NAVIGATION MENU START */
 
 .header__nav-block {
-    position: fixed;
+    position: absolute;
     padding-top: 50px;
     width: 100%;
     z-index: 2;
@@ -355,6 +355,8 @@ input::-webkit-search-results-decoration {
     font-size: var(--text_21);
 }
 .header__nav-block.scroll{
+    transition: 0.3s;
+    position: fixed;
     background-color: var(--dirty-white);
 }
 .header__auth .header__sub-content{

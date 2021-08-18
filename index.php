@@ -17,12 +17,12 @@
 
 <body>
     <!-- 1.HEADER START -->
-    <?php 
-        require("pages/header.php")
+    <?php
+    require("pages/header.php")
     ?>
     <!-- 1.HEADER END -->
     <!-- 2.MAIN START -->
-    <main class="main">
+    <main class="main home">
         <!-- 2.1.BANNER START -->
         <section class="banner">
             <div class="container">
@@ -66,7 +66,7 @@
                                             20
                                         </div>
                                         <div class="product__info">
-                                           <a href="pages/product.php"> <img src="images/info.png" alt=""> </a>
+                                            <a href="pages/product.php"> <img src="images/info.png" alt=""> </a>
                                         </div>
                                         <img src="images/cat_1.png" alt="">
                                         <div class="product__descr">
@@ -99,7 +99,7 @@
                                             <sup>&pound;</sup>
                                             20
                                         </div>
-                                       <a href="pages/product.php"><img src="images/cat_2.png" alt=""></a> 
+                                        <a href="pages/product.php"><img src="images/cat_2.png" alt=""></a>
                                         <div class="product__descr">
                                             <div class="product__name">Womens burnt orange casual tee £29.95</div>
                                             <div>Classic casual t-shirt for women on the move.
@@ -275,14 +275,14 @@
 
         <!-- 2.3.LOOKBOOK START-->
         <?php
-            include("pages/lb-blocks.php");
+        include("pages/lb-blocks.php");
         ?>
         <!-- 2.3.LOOKBOOK END-->
     </main>
     <!-- 2.MAIN END -->
     <!-- 3.FOOTER START -->
     <?php
-        require("pages/footer.php");
+    require("pages/footer.php");
     ?>
     <!-- 3.FOOTER END -->
 

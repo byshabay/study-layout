@@ -1,7 +1,7 @@
   <!-- 1.HEADER START -->
   <header class="header">
       <!-- 1.1.HEADER TOP MENU START -->
-      <section class="header__top-menu">
+      <section class="header__top-menu ">
           <div class="container">
               <div class="header__currency">
                   Currency:

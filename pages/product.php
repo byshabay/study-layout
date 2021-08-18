@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <script src="../scripts/script.js"></script>
+    <script defer src="../scripts/script.js"></script>
 </head>
 
 <body>
