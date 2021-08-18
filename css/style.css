@@ -467,36 +467,6 @@ input::-webkit-search-results-decoration {
     .header__nav-block.active .header__parent-li:first-child{
         margin-top: 0px;
     }
-    .footer__menu{
-        flex-wrap: wrap;
-    }
-    .footer__menu :last-child{
-        width: 100%;
-    }
-    .footer__column{
-        width: 50%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .footer__banner-1{
-        font-size: var(--text_21);
-    }
-    .footer__mini .container{
-        flex-direction: column;
-    }
-    .footer__autors{
-        margin: 20px auto;
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-    }
-    .footer__autors address{
-        margin-left: 0;
-    }
-    .footer__copyright{
-        width: 100%;
-        text-align: center;
-    }
 }
 
 
@@ -1078,7 +1048,7 @@ a.active-tab{
 /* 2.MAIN START */
 
 /* 2.1. BANNER START */
-.lb-banner{
+.common-banner{
     background: url("../images/lb-banner.png") center no-repeat;
     background-size: cover;
     margin-top: 70px;
@@ -1086,24 +1056,24 @@ a.active-tab{
     color: #fff;
     padding: 150px 0;
 }
-.lb-banner h1{
+.common-banner h1{
     font-family: var(--montserrat-light);
     font-weight: normal;
     font-size: var(--text_48);
     text-align: center;
 }
-.lb-banner__our{
+.common-banner__h1{
     font-family: var(--montserrat-bold);
 }
 
-.lb-banner h2{
+.common-banner h2{
     font-family: var(--montserrat-light);
     font-weight: normal;
     font-size: var(--text_30);
     text-align: center;
     margin-top: 50px;
 }
-.lb-banner h2 a{
+.common-banner h2 a{
     color: #fff;
 }
 
@@ -1801,6 +1771,74 @@ a.active-tab{
 /* 3.PRODUCT MEDIA END */
 
 /* PRODUCT PAGE END */
+
+/* BRAND PAGE START */
+/* 2.MAIN START */
+
+/* 2.2.CONTENT START */
+.content.container{
+    width: 70%;
+    margin: 20px auto 120px;
+    justify-content: space-between;
+    text-align: justify;
+}
+.content__column{
+    width: 48%;
+}
+
+.brand .content{
+    display: flex;
+}
+.content__column-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.title-p{
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: var(--text_18);
+    font-weight: bold;
+}
+.brand .content__title{
+    font-size: var(--text_13);
+    margin: 20px 0;
+}
+.brand p{
+    font-size: var(--text_15);
+    line-height: 22px;
+    color: var(--light-grey);
+}
+.content a{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+.content__img{
+    width: 100%;
+    margin: 30px 0;
+}
+.content__text-2{
+    margin: -20px 0 30px;
+}
+.content__text-3{
+    margin-top: 30px;
+}
+.content-awards{
+    display: flex;
+    margin: 80px 0 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+.content-awards img{
+    width: 25%;
+}
+/* 2.2.CONTENT END */
+
+/* 2.MAIN END */
+
+
+
+/* BRAND PAGE END */
 
 
 /* FONTS START */

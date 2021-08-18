@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <script defer src="../scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -27,9 +27,9 @@
     <!-- 2.MAIN START -->
     <main class="main">
         <!-- 2.1.BANNER START -->
-        <section class="prod-banner lb-banner">
+        <section class="prod-banner common-banner">
             <h1>
-                <span class="lb-banner__our">
+                <span class="common-banner__h1">
                     product
                 </span>
                 <span>

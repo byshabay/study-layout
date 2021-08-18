@@ -25,9 +25,9 @@
     <!-- 2.MAIN START -->
     <main class="lb-main main">
         <!-- 2.1. BANNER START -->
-        <section class="lb-banner">
+        <section class="common-banner">
             <h1>
-                <span class="lb-banner__our">
+                <span class="common-banner__h1">
                     Our
                 </span>
                 <span>
