@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script src="../scripts/slick.min.js"></script>
     <script src="../scripts/script.js"></script>
 </head>
 
@@ -84,9 +86,9 @@
             </div>
             <div class="addresses__items catalog__items">
                 <div id="london" class="addresses__item">
-                    <div class="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea7329b26fcbef4fe80ebe1de81544ce21bbb1f601f377168d17731a0d38019e&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
-                        </script>
+                    <div id="map" class="map">
+                        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea7329b26fcbef4fe80ebe1de81544ce21bbb1f601f377168d17731a0d38019e&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+                        </script> -->
 
                     </div>
 

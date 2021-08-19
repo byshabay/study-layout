@@ -2014,6 +2014,16 @@ a.active-tab{
     width: 60%;
     height: auto;
 }
+.ymaps-layers-pane {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+.addresses .catalog__items{
+    padding: 0;
+}
 /* 2.2.ADDRESSES END */
 
 /* 3.LOCAL STORE MEDIA START */
