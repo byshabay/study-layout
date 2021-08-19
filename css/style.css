@@ -2063,6 +2063,7 @@ a.active-tab{
 .auth .container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .auth .title-p{
     margin-bottom: 20px;
@@ -2128,6 +2129,7 @@ input:checked + .auth__check{
     color: var(--dark-white);
     line-height: 22px;
     font-size: var(--text_13);
+    margin-top: 50px;
 }
 .auth__btn-block a{
     color: var(--light-blue);
@@ -2142,6 +2144,25 @@ input:checked + .auth__check{
     padding: 20px 0;
     text-align: center;
     border: 2px;
+}
+.auth__btn{
+    text-transform: uppercase;
+    border: 2px solid var(--grey);
+    color: var(--grey);
+    padding: 20px 0;
+    text-align: center;
+    width: 40%;
+    transition: 0.3s;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: var(--text_15);
+    letter-spacing: 3px;
+}
+.auth__btn:hover{
+    color: #fff;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    transition: 0.3s;
 }
 .auth__form .error{
     background-color: var(--error-light);
