@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     // 3.HEADER ACTIVE LINK START 
 
-    $(".header__nav li a").each(function () {
+    $(".header__nav li a, .footer__menu a").each(function () {
         if (this.href == location.href) $(this).addClass('active-link');
     });
 
@@ -90,26 +90,38 @@ $(document).ready(function () {
         e.preventDefault();
         var email_1 = $("#email_1").val();
         var password_1 = $("#password_1").val();
+        if (
+            email_1.length > 4 &&
+            email_1.match(/@+./)
+        ) {
+            $("#email_1").removeClass("error");
+        } else {
+            $("#email_1").addClass("error");
+        }
 
-        email_1 < 1 ? $("#email_1").addClass("error") : $("#email_1").removeClass("error");
-
-        password_1 < 1 ? $("#password_1").addClass("error") : $("#password_1").removeClass("error");
+        password_1.length < 6 ? $("#password_1").addClass("error") : $("#password_1").removeClass("error");
     })
 
     $("#myForm_2").submit(function (e) {
         e.preventDefault();
         var email = $("#email").val();
-        var email_1 = $("#email_1").val();
-        var password_1 = $("#password_1").val();
         var password_2 = $("#password_2").val();
         var password_3 = $("#password_3").val();
         var check = $("#check");
 
-        email < 1 ? $("#email").addClass("error") : $("#email").removeClass("error");
+        if (
+            email.length > 4 &&
+            email.match(/@+./)
+        ) {
+            $("#email").removeClass("error");
+        } else {
+            $("#email").addClass("error");
+        }
 
-        password_2 < 1 ? $("#password_2").addClass("error") : $("#password_2").removeClass("error");
 
-        password_3 < 1 ? $("#password_3").addClass("error") : $("#password_3").removeClass("error");
+        password_2.length < 6 ? $("#password_2").addClass("error") : $("#password_2").removeClass("error");
+
+        password_3.length < 6 ? $("#password_3").addClass("error") : $("#password_3").removeClass("error");
 
         if (check.attr("checked")) {
             $("#check").removeClass("error");

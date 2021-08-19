@@ -4,7 +4,7 @@
                 <ul class="footer__column">
                     <h3 class="footer__h3">Information</h3>
                     <li><a href="#">The brand</a></li>
-                    <li><a href="#">Local stores</a></li>
+                    <li><a href="/study-layout/pages/localstore.php">Local stores</a></li>
                     <li><a href="#">Customer service</a></li>
                     <li><a href="#">Privacy & cookies</a></li>
                     <li><a href="#">Site map</a></li>
@@ -21,7 +21,7 @@
 
                 <ul class="footer__column">
                     <h3 class="footer__h3">Your account</h3>
-                    <li><a href="#">Sign in</a></li>
+                    <li><a href="/study-layout/pages/auth.php">Sign in</a></li>
                     <li><a href="#">Register</a></li>
                     <li><a href="#">View cart</a></li>
                     <li><a href="#">View your lookbook</a></li>
