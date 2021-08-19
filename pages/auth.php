@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../scripts/slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
     <script src="../scripts/script.js"></script>
 </head>
 
@@ -38,27 +40,28 @@
             </h2>
         </section>
         <!-- 2.1.BANNER END -->
-        <!-- 2.2.AUTH START -->
+        <!-- 2.2.AUTH CONTENT START -->
         <section class="container">
-            <form class="auth__form auth__sign-block">
+            <form novalidate id="myForm" class="auth__form auth__sign-block">
                 <h2 class="title-p">Sign in</h2>
-                <input type="email" placeholder="Your Email" require>
-                <input type="password" placeholder="Your password" require>
-                <div class="ayth__btn-block">
-                    <input class="btn__view" type="button" value="Sign in">
+                <input id="email_1" type="email" placeholder="Your Email..." required>
+                <input id="password_1" type="password" placeholder="Your password..." required>
+                <div class="auth__btn-block">
+                    <button class="auth__btn" type="submit">sign in</button>
                     <a href="#">Forgot your Password &rarr;</a>
                 </div>
             </form>
 
-            <form class="auth__form auth__sign-block">
+            <form id="myForm_2" novalidate class="auth__form auth__reg-block">
                 <h2 class="title-p">register</h2>
-                <input type="email" placeholder="Your Email" require>
-                <input type="password" placeholder="Your password" require>
-                <input type="password" placeholder="Confirm password" require>
-                <input type="checkbox" name="ok" id="ok">
-                <label for="ok">Sign up for exclusive updates, discounts, new arrivals, contests, and more!"</label>
-                <div class="ayth__btn-block">
-                    <input class="btn__view" type="button" value="Create account">
+                <input id="email" type="email" placeholder="Your Email..." required>
+                <input id="password_2" type="password" placeholder="Your password..." required>
+                <input id="password_3" type="password" placeholder="Confirm password" required>
+                <input id="check" class="auth__check-box" type="checkbox" name="ok" required>
+                <label class="auth__check" for="check">Sign up for exclusive updates, discounts, new arrivals, contests, and more!"</label>
+
+                <div class="auth__btn-block auth__btn-block-2">
+                    <button class="auth__btn" type="submit">Create account</button>
                     <span>
                         By clicking ‘Create Account’, you
                         agree to our <a href="#"> Privacy Policy &rarr;</a>
@@ -67,7 +70,7 @@
                 </div>
             </form>
         </section>
-        <!-- 2.2.AUTH END -->
+        <!-- 2.2.AUTH CONTENT END -->
     </main>
     <!-- 2.MAIN END -->
     <!-- 3.FOOTER START -->

@@ -64,9 +64,6 @@ $(document).ready(function () {
     // 7.FIX SLICK + FANCYBOX END
 
     // 8.CUSTOMIZED MAP START
-
-    // 8.CUSTOMIZED MAP END 
-
     ymaps.ready(init);
 
     function init() {
@@ -82,11 +79,48 @@ $(document).ready(function () {
             iconLayout: 'default#image',
             iconImageHref: '../images/location-pin.png',
             iconImageSize: [30, 30]
-
         }),
             myMap.geoObjects.add(myPlacemark);
     }
+    // 8.CUSTOMIZED MAP END 
 
-    init()
+
+    // 9.FORM VALIDATION
+    $("#myForm").submit(function (e) {
+        e.preventDefault();
+        var email_1 = $("#email_1").val();
+        var password_1 = $("#password_1").val();
+
+        email_1 < 1 ? $("#email_1").addClass("error") : $("#email_1").removeClass("error");
+
+        password_1 < 1 ? $("#password_1").addClass("error") : $("#password_1").removeClass("error");
+    })
+
+    $("#myForm_2").submit(function (e) {
+        e.preventDefault();
+        var email = $("#email").val();
+        var email_1 = $("#email_1").val();
+        var password_1 = $("#password_1").val();
+        var password_2 = $("#password_2").val();
+        var password_3 = $("#password_3").val();
+        var check = $("#check");
+
+        email < 1 ? $("#email").addClass("error") : $("#email").removeClass("error");
+
+        password_2 < 1 ? $("#password_2").addClass("error") : $("#password_2").removeClass("error");
+
+        password_3 < 1 ? $("#password_3").addClass("error") : $("#password_3").removeClass("error");
+
+        if (check.attr("checked")) {
+            $("#check").removeClass("error");
+        } else {
+            $("#check").addClass("error");
+        }
+    })
+
+    // 9.FORM VALIDATION
+
+
+
 
 });

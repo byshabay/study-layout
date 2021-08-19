@@ -6,6 +6,8 @@
     --light-grey: #727272;
     --dark-white:#9a9a9a;
     --dirty-white: #f8f8f8;
+    --error-light: #fcf6f7;
+    --error: #bb5465;
     --montserrat: "Montserrat", Arial, Helvetica, sans-serif;
     --montserrat-bold: "Montserrat-Bold", Arial, Helvetica, sans-serif;
     --montserrat-light: "Montserrat-Light", Arial, Helvetica, sans-serif;
@@ -81,7 +83,7 @@ body{
 .btn__view{
     color: var(--dark-grey);
     border: 2px solid var(--grey);
-    padding: 20px 10px;
+    padding: 20px 0px;
     display: block;
     text-align: center;
     font-size: var(--text_15);
@@ -2052,6 +2054,108 @@ a.active-tab{
 /* 3.LOCAL STORE MEDIA END */
 
 /* LOCAL STORE PAGE END */
+
+/* AUTH PAGE START */
+
+/* 2.AUTH MAIN START */
+
+/* 2.2.AUTH CONTENT START */
+.auth .container{
+    display: flex;
+    justify-content: space-between;
+}
+.auth .title-p{
+    margin-bottom: 20px;
+}
+.auth__form{
+    width: 50%;
+    margin-top: 50px;
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.auth__form input{
+    padding: 10px;
+    margin:20px 0;
+    border: 1px solid #eee;
+}
+.auth__form input::placeholder{
+    color:var(--dark-white);
+    font-size: var(--text_13);
+    font-family: var(--montserrat-light);
+}
+.auth__check{
+    display: flex;
+    align-items: center;
+    color: var(--dark-white);
+    font-size: var(--text_13);
+}
+.auth__check::before{
+
+    position: relative;
+    display: block;
+    content: ' ';
+    border: 1px solid #eee ;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+.auth__check-box{
+    display: none;
+}
+
+input:checked + .auth__check::before{
+    content: "x";
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    font-weight: bolder;
+    transition: 0.3s;
+}
+input:checked + .auth__check{
+    color: var(--light-blue);
+    transition: 0.3s;
+}
+.auth__reg-block{
+    border-left: 1px solid #eee;
+    padding: 0px 0px 0px  30px;
+}
+.auth__btn-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-white);
+    line-height: 22px;
+    font-size: var(--text_13);
+}
+.auth__btn-block a{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+.auth__btn-block-2 span{
+    width: 40%;
+    text-align: right;
+}
+.auth__btn-block .btn__view{
+    width: 40%;
+    padding: 20px 0;
+    text-align: center;
+    border: 2px;
+}
+.auth__form .error{
+    background-color: var(--error-light);
+    border: 1px solid var(--error);
+}
+.error + .auth__check::before{
+    background-color: var(--error-light);
+    border: 1px solid var(--error);
+}
+/* 2.2.AUTH CONTENT END */
+
+/* 2.AUTH MAIN END */
+
+/* AYTH PAGE END */
 
 /* FONTS START */
 
