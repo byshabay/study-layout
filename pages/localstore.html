@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCAL STORES</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script src="../scripts/slick.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <!-- 1.HEADER START -->
+    <header class="header">
+        <!-- 1.1.HEADER TOP MENU START -->
+        <section class="header__top-menu ">
+            <div class="container">
+                <div class="header__currency">
+                    Currency:
+                    <select id="currency" class="header__currency-list">
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="MYR">MYR</option>
+                        <option value="HRD">HRD</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+
+                <ul class="header__auth">
+                    <li class="header__register"><a href="/study-layout/pages/auth.html">Register</a></li>
+                    <li class="header__sign-in"><a href="/study-layout/pages/auth.html">Sign In</a></li>
+                    <li class="header__cart header__parent-li">
+                        <img src="/study-layout/images/cart.png" alt="Корзина">
+                        <span> empty</span>
+                        <img class="header__cart-btn" src="/study-layout/images/cart-button.png">
+                        <div class="header__sub-content">
+                            <div class="header__nav-submenu">
+                                <ul class="header__nav-submenu-1">
+                                    <div>Casuals</div>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Sportswear</a></li>
+                                    <li><a href="#">Trousers & Chinos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+
+                                <ul class="header__nav-submenu-2">
+                                    <div>Formal</div>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Trousers</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="header__submenu-sale">
+                                <div> Autumn sale! </div>
+                                <span> up to 50% off</span>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- 1.1.HEADER TOP MENU END -->
+
+        <!-- 1.2.HEADER NAVIGATION MENU START -->
+        <section class="header__nav-block">
+            <div class="container">
+                <a href="/study-layout/index.html"> <img class="header__logo" src="/study-layout/images/logo.png"
+                        alt="Логотип"> </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__parent-li"><a class="header__sub-parent"
+                                href="/study-layout/pages/product.html">mens</a>
+                            <div class="header__sub-content">
+                                <div class="header__nav-submenu">
+                                    <ul class="header__nav-submenu-1">
+                                        <div>Casuals</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="/study-layout/pages/product.html">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Sportswear</a></li>
+                                        <li><a href="#">Trousers & Chinos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+
+                                    <ul class="header__nav-submenu-2">
+                                        <div>Formal</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Trousers</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="header__submenu-sale">
+                                    <div> Autumn sale! </div>
+                                    <span> up to 50% off</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="header__parent-li"><a class="header__sub-parent" href="#">Womens</a>
+                            <div class="header__sub-content">
+                                <div class="header__nav-submenu">
+                                    <ul class="header__nav-submenu-1">
+                                        <div>Casuals</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Sportswear</a></li>
+                                        <li><a href="#">Trousers & Chinos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+
+                                    <ul class="header__nav-submenu-2">
+                                        <div>Formal</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Trousers</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="header__submenu-sale">
+                                    <div> Autumn sale! </div>
+                                    <span> up to 50% off</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/study-layout/pages/brand.html">the brand</a></li>
+                        <li class="header__parent-li"><a class="header__sub-parent"
+                                href="/study-layout/pages/localstore.html">local stores</a>
+                            <div class="header__sub-content">
+                                <div class="header__nav-submenu">
+                                    <ul class="header__nav-submenu-1">
+                                        <div>Casuals</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Sportswear</a></li>
+                                        <li><a href="#">Trousers & Chinos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+
+                                    <ul class="header__nav-submenu-2">
+                                        <div>Formal</div>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Trousers</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="header__submenu-sale">
+                                    <div> Autumn sale! </div>
+                                    <span> up to 50% off</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__parent-li lookbook-sub"><a class="header__sub-parent"
+                                href="/study-layout/pages/lookbook.html">look book</a>
+                            <div class="header__sub-content">
+                                <div class="header__nav-submenu">
+                                    <ul class="header__nav-submenu-1">
+                                        <div>Our Lookbooks</div>
+                                        <li><a href="#">Latest Posts (mixed)</a></li>
+                                        <li><a href="#">Men’s Lookbook</a></li>
+                                        <li><a href="#">Women’s Lookbook</a></li>
+                                    </ul>
+
+                                    <ul class="header__nav-submenu-2">
+                                        <div>Your Lookbook</div>
+                                        <li><a href="#">View and Edit</a></li>
+                                        <li><a href="#">Share</a></li>
+                                        <li><a href="#">Delete</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="header__submenu-sale">
+                                    <div> Autumn sale! </div>
+                                    <span> up to 50% off</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="header__search">
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                    <button class="header__search-btn" type="submit"></button>
+                </form>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- 1.2.HEADER NAVIGATION MENU END -->
+
+    </header>
+    <!-- 1.HEADER END -->
+    <!-- 2.MAIN START -->
+    <main class="main localstore">
+        <!-- 2.1.BANNER START -->
+        <section class="common-banner">
+            <h1>
+                <span class="common-banner__h1">
+                    Local
+                </span>
+                <span>
+                    stores
+                </span>
+            </h1>
+            <h2>
+                find a store near you
+            </h2>
+        </section>
+        <!-- 2.1.BANNER END -->
+        <!-- 2.2.ADDRESSES START-->
+        <section class="addresses">
+            <div class="addresses__tabs container catalog__tab">
+                <div class="addresses__tab">
+                    <span class="title-p">
+                        London
+
+                    </span>
+                    <p class="title-p content__title">
+                        180-182 Regent Street, London, W1B 5BT </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                        ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                        Aliquam erat volutpat.
+                    </p>
+                    <a class="btn__view active-tab" href="#london">View details</a>
+
+                </div>
+                <div class="addresses__tab">
+                    <span class="title-p">
+                        New York
+
+                    </span>
+                    <p class="title-p content__title">
+                        109 Columbus Circle, New York, NY 10023 </p>
+                    <p>
+                        Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum
+                        venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam
+                        dui, non sodales nisl.
+                    </p>
+                    <a class="btn__view" href="#new-york">View details</a>
+
+                </div>
+                <div class="addresses__tab">
+                    <span class="title-p">
+                        Paris
+
+                    </span>
+                    <p class="title-p content__title">
+                        2133 Rue Saint-Honoré, 75001 Paris </p>
+                    <p>
+                        Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet
+                        nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices
+                        posuere cubilia curae cras ligula.
+                    </p>
+                    <a class="btn__view" href="#paris">View details</a>
+
+                </div>
+
+            </div>
+            <div class="addresses__items catalog__items">
+                <div id="london" class="addresses__item">
+                    <div id="map" class="map">
+                        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea7329b26fcbef4fe80ebe1de81544ce21bbb1f601f377168d17731a0d38019e&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+                        </script> -->
+
+                    </div>
+
+                    <div class="addresses__tab">
+                        <span class="title-p">
+                            London
+
+                        </span>
+                        <p class="title-p content__title">
+                            180-182 Regent Street, London, W1B 5BT </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum
+                            ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                            Aliquam erat volutpat.
+                        </p>
+                        <div class="addresses__info">
+                            <div>
+                                <img class="addresses__info-icon" src="../images/pin.png" alt="">
+                                <span>
+                                    180-182 Regent Street, London, W1B 5BT
+                                </span>
+
+                            </div>
+                            <div>
+                                <img class="addresses__info-icon" src="../images/phone-call.png" alt="">
+                                <span>
+                                    <a href="tel:0123456789">0123-456-789</a>
+                                </span>
+                            </div>
+                            <div>
+
+                                <img class="addresses__info-icon" src="../images/url.png" alt="">
+                                <span>
+                                    <a href="#">www.yourwebsite.com</a>
+                                </span>
+                            </div>
+                            <div>
+                                <img class="addresses__info-icon" src="../images/envelope.png" alt="">
+                                <span>
+                                    <a href="mailto:support@yourwebsite.com"> support@yourwebsite.com</a>
+                                </span>
+                            </div>
+                            <div>
+                                <img class="addresses__info-icon" src="../images/clock.png" alt="">
+                                <span>
+                                    Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="addresses__social">
+                            <a class="addresses__soc-ico fb" href="#"></a>
+                            <a class="addresses__soc-ico tw" href="#"></a>
+                            <a class="addresses__soc-ico ig" href="#"></a>
+                            <a class="addresses__soc-ico ptrs" href="#"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="new-york">
+                    2
+                </div>
+                <div id="paris">
+                    3
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- 2.2.ADDRESSES END -->
+    </main>
+    <!-- 2.MAIN END -->
+    <!-- 3.FOOTER START -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu">
+                <ul class="footer__column">
+                    <h3 class="footer__h3">Information</h3>
+                    <li><a href="#">The brand</a></li>
+                    <li><a href="/study-layout/pages/localstore.html">Local stores</a></li>
+                    <li><a href="#">Customer service</a></li>
+                    <li><a href="#">Privacy & cookies</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+
+                <ul class="footer__column">
+                    <h3 class="footer__h3">Why buy from us</h3>
+                    <li><a href="#">Shipping & returns</a></li>
+                    <li><a href="#">Secure shopping</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Award winning</a></li>
+                    <li><a href="#">Ethical trading</a></li>
+                </ul>
+
+                <ul class="footer__column">
+                    <h3 class="footer__h3">Your account</h3>
+                    <li><a href="/study-layout/pages/auth.html">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">View cart</a></li>
+                    <li><a href="#">View your lookbook</a></li>
+                    <li><a href="#">Track an order</a></li>
+                    <li><a href="#">Update information</a></li>
+                </ul>
+
+                <ul class="footer__column">
+                    <h3 class="footer__h3">Lookbook</h3>
+                    <li><a href="#">Latest posts</a></li>
+                    <li><a href="#">Men’s lookbook</a></li>
+                    <li><a href="#">Women’s lookbook </a></li>
+                    <li><a href="#">Lookbooks RSS feed</a></li>
+                    <li><a href="#">View your lookbook</a></li>
+                    <li><a href="#">Delete your lookbook</a></li>
+                </ul>
+
+                <ul class="footer__column">
+                    <h3 class="footer__h3">contact details</h3>
+                    <li><a class="footer_address" href="#">Head Office: Avenue Fashion,
+                            180-182 Regent Street, London.</a></li>
+                    <li class="footer_tel"><a href="tel:0123456789">Telephone: 0123-456-789</a></li>
+                    <li><a href="mailto:support@yourwebsite.com">Email: support@yourwebsite.com</a></li>
+                </ul>
+
+            </nav>
+            <div class="footer__banners">
+                <div class="footer__banner-1">
+                    <div class="footer__bold-text">Award winner</div>
+                    <div>Fashion Awards 2016</div>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><img src="/study-layout/images/facebook.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/twitter.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/instagram.png" alt=""></a>
+                    <a href="#"><img src="/study-layout/images/pinterest.png" alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+        <section class="footer__mini">
+            <div class="container">
+                <div class="footer__copyright">
+                    &copy;
+                    2016 Avenue Fashion
+                    <sup>TM</sup>
+                </div>
+                <div class="footer__autors">
+                    <address>Design by RobbyDesigns.com</address>
+                    <address>Dev by Loremipsum.com</address>
+                </div>
+
+
+            </div>
+        </section>
+
+    </footer>
+    <!-- 3.FOOTER END -->
+
+</body>
+
+</html>
