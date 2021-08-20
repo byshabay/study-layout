@@ -1,9 +1,14 @@
 $(document).ready(function () {
     // 1.HEADER BURGER START
+    // 1.1.MY HEADER BURGER
 
     $(".header__burger").click(function (e) {
         $(".header__burger, .header__nav, .header__nav-block, .header__search").toggleClass('active');
     });
+    // 1.2.STRANGER HEADER BURGER
+    $(".hamburger").click(function () {
+        $(".hamburger, .header__nav, .header__nav-block, .header__search").toggleClass("is-active active")
+    })
 
     // 1.HEADER BURGER END
 

@@ -30,6 +30,9 @@
     list-style: none;
     text-decoration: none;
 }
+button{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 body{
     position: relative;
     padding-bottom: 700px;
@@ -137,7 +140,7 @@ body{
     color: var(--light-grey);
     height: 50px;
     font-size: var(--text_13);
-    z-index: 3;
+    z-index: 5;
 }
 .header__top-menu .container{
     width: 70%;
@@ -336,6 +339,24 @@ input::-webkit-search-results-decoration {
 .header__submenu-sale span{
     font-family: var(--montserrat);
 }
+
+/* STRANGER BURGER START */
+.hamburger{
+    display: none;
+    position: relative;
+    z-index: 5;
+    padding: 0;
+    right: 20px;
+}
+.hamburger-box{
+    width: 30px;
+    height: 20px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: var(--dark-grey) ;
+    width: 100%;
+}
+/* MY BURGER */
 .header__burger{
     display: none;
     position: relative;
@@ -372,6 +393,8 @@ input::-webkit-search-results-decoration {
     transition: 0.3s;
     bottom: 9px;
 }
+
+/* BURGER END */
 .header__nav.active{
     display: flex;
     position: absolute;
@@ -393,6 +416,7 @@ input::-webkit-search-results-decoration {
 .header__nav-block.active {
     height: 100vh;
     overflow-y: scroll;
+    z-index: 4;
 }
 .header__nav.active .header__sub-content{
     width: 60%;
@@ -493,6 +517,9 @@ input::-webkit-search-results-decoration {
     .header__burger{
         display: block;
         margin-right: 5%;
+    }
+    .hamburger{
+        display: block;
     }
     .header__search{
         display: none;
