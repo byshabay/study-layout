@@ -2,8 +2,17 @@ $(document).ready(function () {
     // 1.HEADER BURGER START
 
     $(".header__burger").click(function (e) {
-        $(".header__burger, .header__nav, .header__nav-block, .header__search").toggleClass('active');
+        $(".header__burger, .header__nav, .header__nav-block, .header__search, .header__nav-list").toggleClass('active');
     });
+
+    $(".submenu-open").click(function (e) {
+        $(".menu-a, .header__nav, .header__nav-list").toggleClass("close");
+        $(this).siblings().toggleClass("sub-open");
+        $(this).toggleClass("sub-burger");
+        $(this).parent("li").toggleClass("sub-open");
+    })
+
+
 
     // 1.HEADER BURGER END
 
@@ -38,12 +47,6 @@ $(document).ready(function () {
 
     // 4.CATALOG TABS END
 
-    // 5.SLIDER START
-
-    $(".card__slider").slick();
-
-    // 5.SLIDER END
-
     // 6.QTY COUNTER START
     var val = $('.card__qty').val();
 
@@ -56,33 +59,6 @@ $(document).ready(function () {
         $('.card__qty').val(val);
     });
     // 6.QTY END
-
-    // 7.FIX SLICK + FANCYBOX START
-
-    $(".slick-cloned a").removeAttr("data-fancybox");
-
-    // 7.FIX SLICK + FANCYBOX END
-
-    // 8.CUSTOMIZED MAP START
-    ymaps.ready(init);
-
-    function init() {
-        var myMap = new ymaps.Map("map", {
-            center: [55.75985606898725, 37.61054750000002],
-            zoom: 12
-        });
-        myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'London (честно)'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: '../images/location-pin.png',
-            iconImageSize: [30, 30]
-        }),
-            myMap.geoObjects.add(myPlacemark);
-    }
-    // 8.CUSTOMIZED MAP END 
 
 
     // 9.FORM VALIDATION
