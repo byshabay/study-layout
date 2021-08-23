@@ -12,8 +12,6 @@ $(document).ready(function () {
         $(this).parent("li").toggleClass("sub-open");
     })
 
-
-
     // 1.HEADER BURGER END
 
     // 2.HEADER BACKGROUND AT SCROLL START
@@ -61,7 +59,7 @@ $(document).ready(function () {
     // 6.QTY END
 
 
-    // 9.FORM VALIDATION
+    // 9.FORM VALIDATION START
     $("#myForm").submit(function (e) {
         e.preventDefault();
         var email_1 = $("#email_1").val();
@@ -106,9 +104,17 @@ $(document).ready(function () {
         }
     })
 
-    // 9.FORM VALIDATION
+    // 9.FORM VALIDATION END
 
+    // 10.MINI IMG START
 
+    $(".product__mini").click(function () {
+        $imgSrc = $(this).attr("src");
+        $mainImgSrc = $(this).parents(".product").find(".product__main-img").attr("src");
+        $(this).parents(".product").find(".product__main-img").attr("src", $imgSrc)
+        $(this).attr("src", $mainImgSrc);
+    });
 
+    // 10.MINI IMG END
 
 });
