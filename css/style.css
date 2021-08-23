@@ -667,6 +667,25 @@ input::-webkit-search-results-decoration {
     margin-left: 40px;
     font-style: normal;
 }
+/* STRANGER HOVER EFFECT 1 */
+.grid.footer__banner-1{
+    padding: 0 0 0 0;
+}
+.grid figure{
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+}
+.grid figure figcaption{
+    padding: 2em;
+}
+.grid figure img{
+    width: 100%;
+}
+
 /* 3.3. FOOTER MEDIA START */
 
 /* 820px */
@@ -996,6 +1015,7 @@ a.active-tab{
     width: 40%;   
     margin: 40px 60%;
 }
+
 
 /* 2.3.HOME LOOKBOOK END */
 
