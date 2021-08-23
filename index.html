@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="hamburgers/dist/hamburgers.css">
     <link rel="stylesheet" href="LineMenuStyles/css/component.css">
     <link rel="stylesheet" href="HoverEffectIdeas/css/set1.css">
+    <link rel="stylesheet" href="TiltHoverEffects/css/component.css">
+    <link rel="stylesheet" href="TiltHoverEffects/css/pater.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script>
+        document.documentElement.className = 'js';
+    </script>
+
 </head>
 
-<body>
+<body class="loading">
     <!-- 1.HEADER START -->
     <header class="header">
         <!-- 1.1.HEADER TOP MENU START -->
@@ -476,20 +481,36 @@
         <!-- 2.2.CATALOG END -->
 
         <!-- 2.3.LOOKBOOK START-->
+
+
+
+
         <section class="lookbook">
-            <div class="lookbook__item lookbook__men">
-                <h2>
-                    Men's
-                </h2>
-                <span>
-                    Lookbook
-                </span>
-                <p>Lorem ipsum dolor sit amet eras facilisis
-                    consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
-                    Elementum metus facilisis ut phasellu.
-                </p>
-                <a href="#" class="lookbook__view btn__view">View now</a>
-            </div>
+            <a href="#" class="tilter tilter--5 lookbook__item">
+                <figure class="tilter__figure">
+                    <img class="tilter__image" src="images/men_lb.png" alt="img03" />
+                    <div class="tilter__deco tilter__deco--shine">
+                        <div></div>
+                    </div>
+                    <div class="tilter__deco tilter__deco--overlay"></div>
+                    <figcaption class="tilter__caption">
+                        <h2 class="tilter__title">Men's</h2>
+                        <div class="tilter__description">
+                            <span>
+                                Lookbook
+                            </span>
+                            <p>Lorem ipsum dolor sit amet eras facilisis
+                                consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                                Elementum metus facilisis ut phasellu.
+                            </p>
+                            <button class="lookbook__view btn__view">View now</button>
+                        </div>
+                    </figcaption>
+                    <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                        <path d="M20.5,20.5h260v375h-260V20.5z" />
+                    </svg>
+                </figure>
+            </a>
             <div class="lookbook__item lookbook__women">
                 <h2>
                     Women's
@@ -609,7 +630,214 @@
 
     </footer>
     <!-- 3.FOOTER END -->
+    <script src="scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/anime.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        (function () {
+            var tiltSettings = [
+                {},
+                {
+                    movement: {
+                        imgWrapper: {
+                            translation: { x: 10, y: 10, z: 30 },
+                            rotation: { x: 0, y: -10, z: 0 },
+                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                        },
+                        lines: {
+                            translation: { x: 10, y: 10, z: [0, 70] },
+                            rotation: { x: 0, y: 0, z: -2 },
+                            reverseAnimation: { duration: 2000, easing: 'easeOutExpo' }
+                        },
+                        caption: {
+                            rotation: { x: 0, y: 0, z: 2 },
+                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                        },
+                        overlay: {
+                            translation: { x: 10, y: -10, z: 0 },
+                            rotation: { x: 0, y: 0, z: 2 },
+                            reverseAnimation: { duration: 2000, easing: 'easeOutExpo' }
+                        },
+                        shine: {
+                            translation: { x: 100, y: 100, z: 0 },
+                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        imgWrapper: {
+                            rotation: { x: -5, y: 10, z: 0 },
+                            reverseAnimation: { duration: 900, easing: 'easeOutCubic' }
+                        },
+                        caption: {
+                            translation: { x: 30, y: 30, z: [0, 40] },
+                            rotation: { x: [0, 15], y: 0, z: 0 },
+                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                        },
+                        overlay: {
+                            translation: { x: 10, y: 10, z: [0, 20] },
+                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                        },
+                        shine: {
+                            translation: { x: 100, y: 100, z: 0 },
+                            reverseAnimation: { duration: 900, easing: 'easeOutCubic' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        imgWrapper: {
+                            rotation: { x: -5, y: 10, z: 0 },
+                            reverseAnimation: { duration: 50, easing: 'easeOutQuad' }
+                        },
+                        caption: {
+                            translation: { x: 20, y: 20, z: 0 },
+                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                        },
+                        overlay: {
+                            translation: { x: 5, y: -5, z: 0 },
+                            rotation: { x: 0, y: 0, z: 6 },
+                            reverseAnimation: { duration: 1000, easing: 'easeOutQuad' }
+                        },
+                        shine: {
+                            translation: { x: 50, y: 50, z: 0 },
+                            reverseAnimation: { duration: 50, easing: 'easeOutQuad' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        imgWrapper: {
+                            translation: { x: 0, y: -8, z: 0 },
+                            rotation: { x: 3, y: 3, z: 0 },
+                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                        },
+                        lines: {
+                            translation: { x: 15, y: 15, z: [0, 15] },
+                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                        },
+                        overlay: {
+                            translation: { x: 0, y: 8, z: 0 },
+                            reverseAnimation: { duration: 600, easing: 'easeOutExpo' }
+                        },
+                        caption: {
+                            translation: { x: 10, y: -15, z: 0 },
+                            reverseAnimation: { duration: 900, easing: 'easeOutExpo' }
+                        },
+                        shine: {
+                            translation: { x: 50, y: 50, z: 0 },
+                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        lines: {
+                            translation: { x: -5, y: 5, z: 0 },
+                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                        },
+                        caption: {
+                            translation: { x: 15, y: 15, z: 0 },
+                            rotation: { x: 0, y: 0, z: 3 },
+                            reverseAnimation: { duration: 1500, easing: 'easeOutElastic', elasticity: 700 }
+                        },
+                        overlay: {
+                            translation: { x: 15, y: -15, z: 0 },
+                            reverseAnimation: { duration: 500, easing: 'easeOutExpo' }
+                        },
+                        shine: {
+                            translation: { x: 50, y: 50, z: 0 },
+                            reverseAnimation: { duration: 500, easing: 'easeOutExpo' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        imgWrapper: {
+                            translation: { x: 5, y: 5, z: 0 },
+                            reverseAnimation: { duration: 800, easing: 'easeOutQuart' }
+                        },
+                        caption: {
+                            translation: { x: 10, y: 10, z: [0, 50] },
+                            reverseAnimation: { duration: 1000, easing: 'easeOutQuart' }
+                        },
+                        shine: {
+                            translation: { x: 50, y: 50, z: 0 },
+                            reverseAnimation: { duration: 800, easing: 'easeOutQuart' }
+                        }
+                    }
+                },
+                {
+                    movement: {
+                        lines: {
+                            translation: { x: 40, y: 40, z: 0 },
+                            reverseAnimation: { duration: 1500, easing: 'easeOutElastic' }
+                        },
+                        caption: {
+                            translation: { x: 20, y: 20, z: 0 },
+                            rotation: { x: 0, y: 0, z: -5 },
+                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                        },
+                        overlay: {
+                            translation: { x: -30, y: -30, z: 0 },
+                            rotation: { x: 0, y: 0, z: 3 },
+                            reverseAnimation: { duration: 750, easing: 'easeOutExpo' }
+                        },
+                        shine: {
+                            translation: { x: 100, y: 100, z: 0 },
+                            reverseAnimation: { duration: 750, easing: 'easeOutExpo' }
+                        }
+                    }
+                }];
 
+            function init() {
+                var idx = 0;
+                [].slice.call(document.querySelectorAll('a.tilter')).forEach(function (el, pos) {
+                    idx = pos % 2 === 0 ? idx + 1 : idx;
+                    new TiltFx(el, tiltSettings[idx - 1]);
+                });
+            }
+
+            // Preload all images.
+            imagesLoaded(document.querySelector('main'), function () {
+                document.body.classList.remove('loading');
+                init();
+            });
+
+            // REMOVE THIS!
+            // For Demo purposes only. Prevent the click event.
+            [].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function (el) {
+                el.addEventListener('click', function (ev) { ev.preventDefault(); });
+            });
+
+            var pater = document.querySelector('.pater'),
+                paterSVG = pater.querySelector('.pater__svg'),
+                pathEl = paterSVG.querySelector('path'),
+                paths = { default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover') };
+
+            pater.addEventListener('mouseenter', function () {
+                anime.remove(pathEl);
+                anime({
+                    targets: pathEl,
+                    d: paths.active,
+                    duration: 400,
+                    easing: 'easeOutQuad'
+                });
+            });
+
+            pater.addEventListener('mouseleave', function () {
+                anime.remove(pathEl);
+                anime({
+                    targets: pathEl,
+                    d: paths.default,
+                    duration: 400,
+                    easing: 'easeOutExpo'
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>

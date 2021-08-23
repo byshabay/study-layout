@@ -753,6 +753,7 @@ input::-webkit-search-results-decoration {
 /* 2.HOME MAIN START */
 
 /* 2.1.HOME BANNER START */
+
 .main{
     position: relative;
     width: 100%;
@@ -1017,7 +1018,29 @@ a.active-tab{
     margin: 40px 60%;
 }
 
-
+/* STRANGER ANIMATION */
+.tilter{
+    margin: 0;
+    padding: 0;
+}
+.tilter__caption{
+    top: 0;
+    padding: 60px 30px 30px ;
+}
+.tilter.lookbook__item{
+    padding: 0;
+    height: auto;
+}
+.tilter__figure, .tilter__image{
+    object-fit: cover;
+    width: 100%;
+}
+.tilter__description button{
+    background-color: transparent;
+}
+.tilter__description{
+    letter-spacing: normal;
+}
 /* 2.3.HOME LOOKBOOK END */
 
 /* 2.4.HOME MAIN MEDIA START */
@@ -1070,10 +1093,16 @@ a.active-tab{
         width: 50%;
         margin-right: 0;
     }
-        .lookbook__item{
+    .lookbook__item{
         background-color: var(--dirty-white);
         background-position: 0;
         background-size: contain;
+    }
+    .tilter__figure, .tilter__image{
+        object-fit: contain;
+    }
+    .tilter__caption{
+        padding: 30px;
     }
 
 }
@@ -1136,6 +1165,12 @@ a.active-tab{
     .lookbook__item{
         width: 100%;
         margin: 0 0 50px;
+    }
+    .tilter__caption{
+        padding: 30px;
+    }
+    .tilter__figure, .tilter__image{
+        width: auto;
     }
 
 }
