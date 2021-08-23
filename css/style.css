@@ -35,6 +35,15 @@ body{
     padding-bottom: 700px;
     min-height: 100vh;
 }
+body.active{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+body.active main, body.active footer{
+    display: none;
+}
+
 
 .container{
     width: 90%;
@@ -378,7 +387,7 @@ input::-webkit-search-results-decoration {
     position: fixed;
     width: 100%;
     padding: 0px 0 0 2%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     background-color: var(--dirty-white);
 }
@@ -396,8 +405,8 @@ input::-webkit-search-results-decoration {
     width: 39%;
 }
 .header__nav-block.active {
-    height: 100vh;
-    overflow-y: scroll;
+    height: 100%;
+    /* overflow-y: scroll; */
 }
 .header__nav.active .header__sub-content{
     width: 60%;
@@ -421,6 +430,7 @@ input::-webkit-search-results-decoration {
 }
 .header__auth .header__sub-content{
     top: 50px;
+    right: 0;
 }
 .lookbook-sub .header__sub-content{
     width: 28%;
@@ -595,7 +605,7 @@ input::-webkit-search-results-decoration {
     .header__nav.active .header__nav-list{
         margin-top: 200px;
         width: 100%;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
     .header__nav.active .header__nav-list.close{
         margin-top: 150px;

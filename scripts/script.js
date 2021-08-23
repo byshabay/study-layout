@@ -2,7 +2,7 @@ $(document).ready(function () {
     // 1.HEADER BURGER START
 
     $(".header__burger").click(function (e) {
-        $(".header__burger, .header__nav, .header__nav-block, .header__search, .header__nav-list").toggleClass('active');
+        $(".header__burger, .header__nav, .header__nav-block, .header__search, .header__nav-list, body").toggleClass('active');
     });
 
     $(".submenu-open").click(function (e) {
@@ -15,8 +15,10 @@ $(document).ready(function () {
     // 1.HEADER BURGER END
 
     // 2.HEADER BACKGROUND AT SCROLL START
+    console.log($(".header__nav-block").attr("class"))
 
     $(document).scroll(function (e) {
+
         $(window).scrollTop() > 20 ? $(".header__nav-block, .home").addClass("scroll") : $(".header__nav-block, .home").removeClass("scroll");
     });
 
