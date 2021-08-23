@@ -1,16 +1,15 @@
 $(document).ready(function () {
-    // 1.HEADER BURGER START
+
     // 1.1.MY HEADER BURGER
 
     $(".header__burger").click(function (e) {
         $(".header__burger, .header__nav, .header__nav-block, .header__search").toggleClass('active');
     });
+
     // 1.2.STRANGER HEADER BURGER
     $(".hamburger").click(function () {
         $(".hamburger, .header__nav, .header__nav-block, .header__search").toggleClass("is-active active")
     })
-
-    // 1.HEADER BURGER END
 
     // 2.HEADER BACKGROUND AT SCROLL START
 
@@ -20,13 +19,17 @@ $(document).ready(function () {
 
     // 2.HEADER BACKGROUND AT SCROLL END
 
-    // 3.HEADER ACTIVE LINK START 
+    // 3.1.MY HEADER ACTIVE LINK  
 
     $(".header__nav li a, .footer__menu a").each(function () {
-        if (this.href == location.href) $(this).addClass('active-link');
+        if (this.href == location.href) $(this).addClass('active-link menu__item--current');
     });
 
-    // 3.HEADER ACTIVE LINK END
+    // 3.2.STRANGER HEADER ACTIVE LINK 
+    $(".menu__item").click(function () {
+        $(".menu__item").removeClass("menu__item--current")
+        $(this).addClass("menu__item--current");
+    });
 
     // 4.CATALOG TABS START
 
@@ -43,11 +46,7 @@ $(document).ready(function () {
 
     // 4.CATALOG TABS END
 
-    // 5.SLIDER START
 
-    $(".card__slider").slick();
-
-    // 5.SLIDER END
 
     // 6.QTY COUNTER START
     var val = $('.card__qty').val();
@@ -62,32 +61,7 @@ $(document).ready(function () {
     });
     // 6.QTY END
 
-    // 7.FIX SLICK + FANCYBOX START
 
-    $(".slick-cloned a").removeAttr("data-fancybox");
-
-    // 7.FIX SLICK + FANCYBOX END
-
-    // 8.CUSTOMIZED MAP START
-    ymaps.ready(init);
-
-    function init() {
-        var myMap = new ymaps.Map("map", {
-            center: [55.75985606898725, 37.61054750000002],
-            zoom: 12
-        });
-        myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'London (честно)'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: '../images/location-pin.png',
-            iconImageSize: [30, 30]
-        }),
-            myMap.geoObjects.add(myPlacemark);
-    }
-    // 8.CUSTOMIZED MAP END 
 
 
     // 9.FORM VALIDATION

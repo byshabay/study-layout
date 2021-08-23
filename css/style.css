@@ -100,6 +100,13 @@ body{
     border: 2px solid var(--light-blue);
 }
 
+/* 0.ANIMATION START */
+
+
+
+/* ANIMATION END */
+
+
 /* COMMON MEDIA START */
 @media(min-width: 2000px){
     :root{
@@ -451,6 +458,24 @@ input::-webkit-search-results-decoration {
 }
 .header__nav-list a.active-link, .footer__column  a.active-link {
     color: var(--light-blue);
+}
+
+/* STRANGER MENU */
+.menu__item a.menu__link {
+    display: flex;
+    text-align: start;
+}
+.menu__item{
+    margin: 0;
+}
+.menu.header__nav{
+    padding: 11px 15px 0 0;
+}
+.menu--ferdinand .menu__item--current .menu__link{
+    color: var(--light-blue);
+}
+.menu--ferdinand .menu__link::before{
+    background-color: var(--light-blue);
 }
 /* 1.2.HEADER NAVIGATION MENU END */
 

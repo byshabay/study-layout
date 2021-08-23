@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="hamburgers/dist/hamburgers.css">
+    <link rel="stylesheet" href="LineMenuStyles/css/component.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -75,12 +76,13 @@
         <!-- 1.1.HEADER TOP MENU END -->
 
         <!-- 1.2.HEADER NAVIGATION MENU START -->
-        <section class="header__nav-block">
+        <section class="header__nav-block section section--menu" id="ferdinand">
             <div class="container">
                 <a href="index.html"> <img class="header__logo" src="images/logo.png" alt="Логотип"> </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__parent-li"><a class="header__sub-parent" href="pages/product.html">mens</a>
+                <nav class="header__nav menu menu--ferdinand">
+                    <ul class="header__nav-list menu__list">
+                        <li class="header__parent-li  menu__item menu__item--current"><a
+                                class="menu__link header__sub-parent" href="pages/product.html">mens</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
                                     <ul class="header__nav-submenu-1">
@@ -109,7 +111,8 @@
                             </div>
 
                         </li>
-                        <li class="header__parent-li"><a class="header__sub-parent" href="#">Womens</a>
+                        <li class="header__parent-li menu__item"><a class="header__sub-parent menu__link"
+                                href="#women">Womens</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
                                     <ul class="header__nav-submenu-1">
@@ -137,8 +140,9 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="pages/brand.html">the brand</a></li>
-                        <li class="header__parent-li"><a class="header__sub-parent" href="pages/localstore.html">local
+                        <li class="menu__item"><a class="menu__link" href="pages/brand.html">the brand</a></li>
+                        <li class="header__parent-li menu__item"><a class="menu__link header__sub-parent"
+                                href="pages/localstore.html">local
                                 stores</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
@@ -167,7 +171,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="header__parent-li lookbook-sub"><a class="header__sub-parent"
+                        <li class="header__parent-li lookbook-sub menu__item"><a class="menu__link header__sub-parent"
                                 href="pages/lookbook.html">look book</a>
                             <div class="header__sub-content">
                                 <div class="header__nav-submenu">
@@ -219,6 +223,7 @@
     <!-- 1.HEADER END -->
     <!-- 2.MAIN START -->
     <main class="main home">
+
         <!-- 2.1.BANNER START -->
         <section class="banner">
             <div class="container">
@@ -230,7 +235,7 @@
         <!-- 2.1.BANNER END -->
 
         <!-- 2.2.CATALOG START -->
-        <section class="catalog container">
+        <section id="women" class="catalog container">
             <hr>
             <div id="tabs" class="catalog__tabs">
 
