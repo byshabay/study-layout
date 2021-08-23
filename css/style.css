@@ -756,7 +756,8 @@ input::-webkit-search-results-decoration {
 .main{
     position: relative;
     width: 100%;
-    padding-top: 50px;
+    padding: 50px 0 120px;
+    
 }
 .banner .container{
     text-align: right;
