@@ -19,6 +19,7 @@
     --text_36: calc( (100vw - 300px)/(1780 - 300) * (36 - 30) + 30px);
     --text_30: calc( (100vw - 300px)/(1780 - 300) * (30 - 24) + 24px);
     --text_48: calc( (100vw - 300px)/(1780 - 300) * (48 - 30) + 30px);
+    --text_72: calc( (100vw - 300px)/(1780 - 300) * (170 - 150) + 150px);
 }
 
 *{
@@ -102,6 +103,95 @@ body{
 
 /* 0.ANIMATION START */
 
+        .cursor {
+            position: fixed;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+        }
+
+        .cursor--small {
+            width: 5px;
+            height: 5px;
+            left: -2.5px;
+            top: -2.5px;
+            border-radius: 50%;
+            z-index: 11000;
+            background: var(--light-blue);
+        }
+
+        .cursor--canvas {
+            width: 100vw;
+            height: 100vh;
+            z-index: 12000;
+        }
+
+        .nav {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
+        .nav .header__search-btn{
+            top: -2px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            background-size: 15%;
+        }
+        .nav .header__search-btn:hover{
+            
+        }
+
+        .link {
+            display: flex;
+            width: 75px;
+            height: 75px;
+            margin: 0 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .settings-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+
+        .settings-icon__line {
+            stroke: var(--color-text);
+            stroke-width: 5px;
+            transition: all 0.2s ease 0.05s;
+        }
+
+        .settings-icon__rect {
+            stroke: var(--color-text);
+            fill: var(--color-bg);
+            stroke-width: 5px;
+            transition: all 0.2s ease 0.05s;
+        }
+
+        .link:hover .settings-icon__line,
+        .link:hover .settings-icon__rect {
+            stroke: var(--color-link);
+            transition: all 0.2s ease 0.05s;
+        }
+
+        .link:hover .settings-icon__group--1 .settings-icon__rect {
+            transform: translateY(20px);
+        }
+
+        .link:hover .settings-icon__group--2 .settings-icon__rect {
+            transform: translateY(-20px);
+        }
+
+        .link:hover .settings-icon__group--3 .settings-icon__rect {
+            transform: translateY(25px);
+        }
+
+        body,
+        body a {
+            cursor: none;
+        }
 
 
 /* ANIMATION END */
@@ -479,7 +569,33 @@ input::-webkit-search-results-decoration {
 }
 /* 1.2.HEADER NAVIGATION MENU END */
 
-/* 1.3.HEADER MEDIA START */
+/* 1.3.HEADER STRANGER BANNER START*/
+.banner .slide{
+    height: auto;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+.banner .slideshow{
+    width: 100%;
+    position: relative;
+}
+.banner .word{
+    font-family: var(--montserrat-bold);
+    color: var(--grey);
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.banner .word--3, .banner .word--3 span{
+    font-family: var(--montserrat-bold);
+    font-size: var(--text_72);
+}
+
+/* 1.3.HEADER STRANGER BANNER END */
+
+/* 1.4.HEADER MEDIA START */
 
 /* 1660px */
 @media(max-width: 1660px){
@@ -577,7 +693,7 @@ input::-webkit-search-results-decoration {
 }
 
 
-/* 1.3.HEADER MEDIA END */
+/* 1.4.HEADER MEDIA END */
 
 /* 1.HEADER END */
 
