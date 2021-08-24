@@ -188,10 +188,16 @@ body{
             transform: translateY(25px);
         }
 
-        body,
-        body a {
-            cursor: none;
+        body.loading,
+        body.loading a {
+            cursor: none !important;
         }
+/* BUTTONS HOVER START */
+.bg-1{
+    background-color: transparent;
+}
+/* BUTTONS HOVER END */
+
 
 
 /* ANIMATION END */
@@ -312,6 +318,7 @@ body{
     position: absolute;
     width: 20%;
     top: 18px;
+    left: 0;
 }
 .header__nav {
     width: 70%;
