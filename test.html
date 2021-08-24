@@ -6,17 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="SidebarTransitions/css/component.css">
+    <style>
+        .st-effect-7.st-container {
+            perspective: 1500px;
+            perspective-origin: 0% 50%;
+        }
 
-    <link rel="stylesheet" href="ButtonStylesInspiration/css/base.css">
-    <link rel="stylesheet" href="ButtonStylesInspiration/css/buttons.css">
+        .st-effect-7 .st-pusher {
+            transform-style: preserve-3d;
+        }
+
+        .st-effect-7.st-menu-open .st-pusher {
+            transform: translate3d(300px, 0, 0);
+        }
+
+        .st-effect-7.st-menu {
+            transform: translate3d(-100%, 0, 0) rotateY(-90deg);
+            transform-origin: 100% 50%;
+            transform-style: preserve-3d;
+        }
+
+        .st-effect-7.st-menu-open .st-effect-7.st-menu {
+            visibility: visible;
+            transform: translate3d(-100%, 0, 0) rotateY(0deg);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="box bg-1">
-        <button class="button button--ujarak button--border-thin button--text-thick">Vote</button>
-        <button class="button button--ujarak button--border-thin button--text-thick">Delete</button>
-    </div>
+    <div id="st-container" class="st-container">
 
+        <nav class="st-menu st-effect-1" id="menu-1">
+        </nav>
+
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
