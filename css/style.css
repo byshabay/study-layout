@@ -57,7 +57,7 @@ body.active main, body.active footer{
     margin-top: 70px;
     text-transform: uppercase;
     color: #fff;
-    padding: 150px 0;
+    padding: 150px 15px;
 }
 .common-banner h1{
     font-family: var(--montserrat-light);
@@ -92,7 +92,7 @@ body.active main, body.active footer{
 .btn__view{
     color: var(--dark-grey);
     border: 2px solid var(--grey);
-    padding: 20px 0px;
+    padding: 20px 15px;
     display: block;
     text-align: center;
     font-size: var(--text_15);
@@ -905,6 +905,7 @@ a.active-tab{
 }
 .product__info img{
     width: 69px;
+    cursor: pointer;
 }
 .sale{
     display: flex;
@@ -1191,7 +1192,6 @@ a.active-tab{
     .catalog__items{
         margin-top: 0;
         padding-top: 0;
-        overflow-y: scroll;
     }
     .home .catalog__items{
         overflow-y: hidden;
@@ -1776,6 +1776,7 @@ a.active-tab{
 .card__btns{
     display: flex;
     align-items: center;
+    
 }
 .card__btn{
     display: flex;
@@ -1789,6 +1790,7 @@ a.active-tab{
     margin: 30px 40px 0 0;
     font-weight: bold;
     transition: 0.3s;
+    cursor: pointer;
 }
 .card__cart-img{
     width: 20px;
@@ -2143,6 +2145,7 @@ input::-webkit-inner-spin-button {
 /* 2.2.ADDRESSES START */
 .main .container{
     width: 70%;
+    padding: 15px;
 }
 .addresses__tabs{
     display: flex;
@@ -2379,7 +2382,7 @@ input:checked + .auth__check{
     text-transform: uppercase;
     border: 2px solid var(--grey);
     color: var(--grey);
-    padding: 20px 0;
+    padding: 20px 15px;
     text-align: center;
     width: 40%;
     transition: 0.3s;
@@ -2387,6 +2390,7 @@ input:checked + .auth__check{
     font-weight: bold;
     font-size: var(--text_15);
     letter-spacing: 3px;
+    cursor: pointer;
 }
 .auth__btn:hover{
     color: #fff;

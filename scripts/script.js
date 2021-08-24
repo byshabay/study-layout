@@ -15,8 +15,6 @@ $(document).ready(function () {
     // 1.HEADER BURGER END
 
     // 2.HEADER BACKGROUND AT SCROLL START
-    console.log($(".header__nav-block").attr("class"))
-
     $(document).scroll(function (e) {
 
         $(window).scrollTop() > 20 ? $(".header__nav-block, .home").addClass("scroll") : $(".header__nav-block, .home").removeClass("scroll");
