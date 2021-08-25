@@ -38,8 +38,8 @@ body{
     position: relative;
     padding-bottom: 700px;
     min-height: 100vh;
+    overflow-y: auto;
 }
-
 .container{
     width: 90%;
     max-width: var(--max-width);
@@ -137,9 +137,6 @@ body{
             width: 100%;
             height: 100%;
             background-size: 15%;
-        }
-        .nav .header__search-btn:hover{
-            
         }
 
         .link {
