@@ -184,11 +184,6 @@ body{
         .link:hover .settings-icon__group--3 .settings-icon__rect {
             transform: translateY(25px);
         }
-
-        /* body.loading,
-        body.loading a {
-            cursor: none;
-        } */
 /* BUTTONS HOVER START */
 .bg-1{
     background-color: transparent;
@@ -224,6 +219,9 @@ body{
 @media(max-width: 506px) {
     body{
         padding-bottom: 1850px;
+    }
+    .shapes{
+        display: none;
     }
 }
 
@@ -441,13 +439,13 @@ input::-webkit-search-results-decoration {
     font-family: var(--montserrat);
 }
 
-/* STRANGER BURGER START */
+/* STRANGER BURGER START + SIDEBAR*/
 .hamburger{
     display: none;
-    position: relative;
+    position: absolute;
+    right: 20px;
     z-index: 5;
     padding: 0;
-    right: 20px;
 }
 .hamburger-box{
     width: 30px;
@@ -457,6 +455,21 @@ input::-webkit-search-results-decoration {
     background-color: var(--dark-grey) ;
     width: 100%;
 }
+.st-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.main.clearfix{
+    padding: 15px 15px 100vh ;
+}
+.st-menu li{
+    padding: 20px;
+}
+.st-menu ul li a{
+    padding:20px;
+}
+
 /* MY BURGER */
 .header__burger{
     display: none;
@@ -693,6 +706,9 @@ input::-webkit-search-results-decoration {
     }
     .header__nav-block.active .header__parent-li:first-child{
         margin-top: 0px;
+    }
+    .banner .word--3, .banner .word--3 span{
+        font-size: var(--text_48);
     }
 }
 
@@ -1290,7 +1306,7 @@ a.active-tab{
         padding: 30px;
     }
     .tilter__figure, .tilter__image{
-        width: auto;
+       padding-bottom: 10px;
     }
 
 }
