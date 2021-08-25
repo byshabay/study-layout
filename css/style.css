@@ -461,6 +461,7 @@ input::-webkit-search-results-decoration {
     width: 100%;
 }
 .main.clearfix{
+    display: none;
     padding: 15px 15px 100vh ;
 }
 .st-menu li{
@@ -677,6 +678,9 @@ input::-webkit-search-results-decoration {
         margin-right: 5%;
     }
     .hamburger{
+        display: block;
+    }
+    .main.clearfix{
         display: block;
     }
     .header__search{
