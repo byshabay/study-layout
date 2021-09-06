@@ -184,6 +184,9 @@ body{
         .link:hover .settings-icon__group--3 .settings-icon__rect {
             transform: translateY(25px);
         }
+        .shapes{
+            max-height 100vh;
+        }
 /* BUTTONS HOVER START */
 .bg-1{
     background-color: transparent;
@@ -464,11 +467,22 @@ input::-webkit-search-results-decoration {
     display: none;
     padding: 15px 15px 100vh ;
 }
+.st-menu{
+    background-color: var(--dark-white);
+}
 .st-menu li{
     padding: 20px;
 }
 .st-menu ul li a{
     padding:20px;
+}
+.st-menu  .header__sub-content{
+    display: none !important;
+    position: relative;
+    margin: 0;
+}
+.st-menu  .header__sub-content .header__nav-submenu{
+    flex-direction: column;
 }
 
 /* MY BURGER */
@@ -527,6 +541,7 @@ input::-webkit-search-results-decoration {
     flex-direction: column;
     background-color: none;
     width: 39%;
+    display: none;
 }
 .header__nav-block.active {
     height: 100vh;

@@ -10,12 +10,12 @@
             },
             hide: {
                 lettersAnimationOpts: {
-                    duration: 200,
+                    duration: 2000,
                     delay: (t, i, total) => (total - i - 1) * 20,
                     easing: 'easeOutExpo',
                     opacity: {
                         value: [1, 0],
-                        duration: 100,
+                        duration: 2000,
                         delay: (t, i, total) => (total - i - 1) * 20,
                         easing: 'linear'
                     },
@@ -24,14 +24,14 @@
             },
             show: {
                 lettersAnimationOpts: {
-                    duration: 400,
+                    duration: 2000,
                     delay: (t, i) => i * 60,
                     easing: 'easeInOutExpo',
                     opacity: [0, 1],
                     translateY: ['-100%', '0%']
                 },
                 shapesAnimationOpts: {
-                    duration: 400,
+                    duration: 2000,
                     delay: (t, i) => i * 20,
                     easing: 'easeOutBack',
                     translateX: {
@@ -47,12 +47,12 @@
                     opacity: [
                         {
                             value: 1,
-                            duration: 1,
+                            duration: 5,
                             delay: (t, i) => i * 20
                         },
                         {
                             value: 0,
-                            duration: 500,
+                            duration: 2000,
                             easing: 'linear'
                         }
                     ]

@@ -8,8 +8,6 @@
     <title>AVENUE FASHION</title>
 
     <!-- CSS -->
-
-
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <!-- BURGER CSS -->
     <link rel="stylesheet" href="css/hamburger.css">
@@ -19,13 +17,13 @@
     <link rel="stylesheet" href="css/set1.css">
     <!-- LOOKBOOK HOVER BLOCK CSS -->
     <link rel="stylesheet" href="css/tilt.css">
-    <link rel="stylesheet" href="/css/paterTilt.css">
+    <link rel="stylesheet" href="css/paterTilt.css">
     <!--Нужно ли?-->
     <link href="css/pater.css">
     <!-- TEXT ANIMATION -->
     <link rel="stylesheet" href="css/textAnimation.css">
     <!-- SIDEBAR CSS -->
-    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <!-- ломает код -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,17 +31,15 @@
     <!-- SCRIPTS -->
 
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!--<script>
-        document.documentElement.className = 'js';
-    </script> -->
-    <!-- непонятные скрипты -->
-    <!-- <script src="scripts/anime.min.js"></script> -->
-    <!-- непонятный скрипт -->
     <!-- SLIDEBAR SCRIPTS -->
     <script defer src="scripts/classie.js"></script>
     <script defer src="scripts/sidebarEffects.js"></script>
     <!-- LOOKBOOK HOVER BLOCK SCRIPTS -->
+    <script>
+        document.documentElement.className = 'js';
+    </script>
     <script defer src="scripts/imagesloaded.pkgd.min.js"></script>
+    <script defer src="scripts/anime.min.js"></script>
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/tilt.js"></script>
     <!-- TEXT ANIMATION SCRIPTS -->
@@ -52,8 +48,8 @@
     <script defer src="scripts/wordFx.js"></script>
     <script defer src="scripts/textAnimation.js"></script>
     <!-- CURSOR SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     <script defer src="scripts/cursor.js"></script>
     <script defer src="scripts/script.js"></script>
 </head>
@@ -261,13 +257,123 @@
                     <div class="st-pusher">
 
                         <nav class="st-menu st-effect-8" id="menu-8">
-                            <h2 class="icon icon-stack">Sidebar</h2>
+                            <h2 class="icon icon-stack">Меню</h2>
                             <ul>
-                                <li><a class="" href="#">Data Management</a></li>
-                                <li><a class="" href="#">Location</a></li>
-                                <li><a class="" href="#">Study</a></li>
-                                <li><a class="" href="#">Collections</a></li>
-                                <li><a class="" href="#">Credits</a></li>
+                                <li class="header__parent-li  menu__item menu__item--current"><a
+                                        class="menu__link header__sub-parent" href="pages/product.html">mens</a>
+                                    <div class="header__sub-content">
+                                        <div class="header__nav-submenu">
+                                            <ul class="header__nav-submenu-1">
+                                                <div>Casuals</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="pages/product.html">Hoodies & Sweatshirts</a></li>
+                                                <li><a href="#">Polo Shirts</a></li>
+                                                <li><a href="#">Sportswear</a></li>
+                                                <li><a href="#">Trousers & Chinos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                            </ul>
+
+                                            <ul class="header__nav-submenu-2">
+                                                <div>Formal</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Suits</a></li>
+                                                <li><a href="#">Trousers</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="header__submenu-sale">
+                                            <div> Autumn sale! </div>
+                                            <span> up to 50% off</span>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="header__parent-li menu__item"><a class="header__sub-parent menu__link"
+                                        href="#women">Womens</a>
+                                    <div class="header__sub-content">
+                                        <div class="header__nav-submenu">
+                                            <ul class="header__nav-submenu-1">
+                                                <div>Casuals</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                <li><a href="#">Polo Shirts</a></li>
+                                                <li><a href="#">Sportswear</a></li>
+                                                <li><a href="#">Trousers & Chinos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                            </ul>
+
+                                            <ul class="header__nav-submenu-2">
+                                                <div>Formal</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Suits</a></li>
+                                                <li><a href="#">Trousers</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="header__submenu-sale">
+                                            <div> Autumn sale! </div>
+                                            <span> up to 50% off</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item"><a class="menu__link" href="pages/brand.html">the brand</a></li>
+                                <li class="header__parent-li menu__item"><a class="menu__link header__sub-parent"
+                                        href="pages/localstore.html">local
+                                        stores</a>
+                                    <div class="header__sub-content">
+                                        <div class="header__nav-submenu">
+                                            <ul class="header__nav-submenu-1">
+                                                <div>Casuals</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                <li><a href="#">Polo Shirts</a></li>
+                                                <li><a href="#">Sportswear</a></li>
+                                                <li><a href="#">Trousers & Chinos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                            </ul>
+
+                                            <ul class="header__nav-submenu-2">
+                                                <div>Formal</div>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Suits</a></li>
+                                                <li><a href="#">Trousers</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="header__submenu-sale">
+                                            <div> Autumn sale! </div>
+                                            <span> up to 50% off</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__parent-li lookbook-sub menu__item"><a
+                                        class="menu__link header__sub-parent" href="pages/lookbook.html">look book</a>
+                                    <div class="header__sub-content">
+                                        <div class="header__nav-submenu">
+                                            <ul class="header__nav-submenu-1">
+                                                <div>Our Lookbooks</div>
+                                                <li><a href="#">Latest Posts (mixed)</a></li>
+                                                <li><a href="#">Men’s Lookbook</a></li>
+                                                <li><a href="#">Women’s Lookbook</a></li>
+                                            </ul>
+
+                                            <ul class="header__nav-submenu-2">
+                                                <div>Your Lookbook</div>
+                                                <li><a href="#">View and Edit</a></li>
+                                                <li><a href="#">Share</a></li>
+                                                <li><a href="#">Delete</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="header__submenu-sale">
+                                            <div> Autumn sale! </div>
+                                            <span> up to 50% off</span>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
 
@@ -560,9 +666,9 @@
 
         <!-- 2.3.LOOKBOOK START-->
         <section class="lookbook">
-            <a href="#" class="tilter tilter--5 lookbook__item">
+            <a href="#" class="tilter tilter--5">
                 <figure class="tilter__figure">
-                    <img class="tilter__image" src="images/men_lb.png" alt="img03" />
+                    <img class="tilter__image" src="images/1.jpg" alt="img03" />
                     <div class="tilter__deco tilter__deco--shine">
                         <div></div>
                     </div>
